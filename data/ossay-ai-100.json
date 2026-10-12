@@ -1,0 +1,3612 @@
+[
+ {
+  "repo": "openclaw/openclaw",
+  "url": "https://github.com/openclaw/openclaw",
+  "description": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 ",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 391756,
+   "forks": 82369,
+   "open_issues": 9578,
+   "watchers": 1715,
+   "created": "2025-11-24",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "TypeScript",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v2026.10.5-beta.2",
+    "date": "2026-10-12"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "obra/superpowers",
+  "url": "https://github.com/obra/superpowers",
+  "description": "An agentic skills framework & software development methodology that works.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 298018,
+   "forks": 26626,
+   "open_issues": 332,
+   "watchers": 1098,
+   "created": "2025-10-09",
+   "pushed": "2026-10-10",
+   "archived": false,
+   "language": "Shell",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "v7.0.0",
+    "date": "2026-10-10"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "mattpocock/skills",
+  "url": "https://github.com/mattpocock/skills",
+  "description": "Skills for Real Engineers. Straight from my .agents directory.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 287351,
+   "forks": 24113,
+   "open_issues": 163,
+   "watchers": 1518,
+   "created": "2026-02-03",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Shell",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "v1.3.1",
+    "date": "2026-10-04"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "affaan-m/ECC",
+  "url": "https://github.com/affaan-m/ECC",
+  "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 277602,
+   "forks": 41395,
+   "open_issues": 156,
+   "watchers": 1374,
+   "created": "2026-01-18",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "JavaScript",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "v2.2.3",
+    "date": "2026-10-01"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "NousResearch/hermes-agent",
+  "url": "https://github.com/NousResearch/hermes-agent",
+  "description": "The agent that grows with you",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 252998,
+   "forks": 54806,
+   "open_issues": 48012,
+   "watchers": 976,
+   "created": "2025-07-22",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v0.21.7",
+    "date": "2026-10-12"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "deepseek-ai/deepseek-harness",
+  "url": "https://github.com/deepseek-ai/deepseek-harness",
+  "description": "DeepSeek Harness: Everything is a Plugin.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 248052,
+   "forks": 29821,
+   "open_issues": 0,
+   "watchers": 1059,
+   "created": "2026-08-13",
+   "pushed": "2026-10-09",
+   "archived": false,
+   "language": "TypeScript",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "dsh-v0.2.1-alpha.2",
+    "date": "2026-10-09"
+   }
+  },
+  "flags": [
+   {
+    "id": "VERY_YOUNG",
+    "level": "note",
+    "text": "Created 60 days ago: APIs and ownership may still move."
+   }
+  ]
+ },
+ {
+  "repo": "n8n-io/n8n",
+  "url": "https://github.com/n8n-io/n8n",
+  "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": null,
+   "class": "source-available",
+   "commercial_use": "conditional",
+   "hosting_as_service": "restricted",
+   "evidence": [
+    "License text matches \"Sustainable Use License\""
+   ],
+   "confidence": "medium",
+   "label": "Sustainable Use License",
+   "note": "Internal business use allowed; offering it as a hosted service to others is not.",
+   "github_license_file_spdx": "NOASSERTION"
+  },
+  "metrics": {
+   "stars": 207087,
+   "forks": 61095,
+   "open_issues": 1160,
+   "watchers": 1176,
+   "created": "2019-06-22",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "TypeScript",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "stable",
+    "date": "2026-10-12"
+   }
+  },
+  "flags": [
+   {
+    "id": "SOURCE_AVAILABLE",
+    "level": "risk",
+    "text": "Source-available, not open source (Sustainable Use License): hosting/resale is restricted."
+   }
+  ]
+ },
+ {
+  "repo": "tensorflow/tensorflow",
+  "url": "https://github.com/tensorflow/tensorflow",
+  "description": "An Open Source Machine Learning Framework for Everyone",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 200889,
+   "forks": 79207,
+   "open_issues": 3406,
+   "watchers": 7531,
+   "created": "2015-11-07",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "C++",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v2.22.0-rc0",
+    "date": "2026-09-24"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "firecrawl/firecrawl",
+  "url": "https://github.com/firecrawl/firecrawl",
+  "description": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. 🔥",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "AGPL-3.0",
+   "class": "network-copyleft",
+   "commercial_use": "yes",
+   "hosting_as_service": "conditional",
+   "evidence": [
+    "SPDX AGPL-3.0"
+   ],
+   "confidence": "high",
+   "note": "Users of a modified hosted version must be offered the source.",
+   "github_license_file_spdx": "AGPL-3.0"
+  },
+  "metrics": {
+   "stars": 190706,
+   "forks": 10127,
+   "open_issues": 577,
+   "watchers": 489,
+   "created": "2024-04-15",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "TypeScript",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v2.11.0",
+    "date": "2026-06-19"
+   }
+  },
+  "flags": [
+   {
+    "id": "NETWORK_COPYLEFT",
+    "level": "note",
+    "text": "AGPL: offering a modified version as a service obliges you to share the source."
+   }
+  ]
+ },
+ {
+  "repo": "Significant-Gravitas/AutoGPT",
+  "url": "https://github.com/Significant-Gravitas/AutoGPT",
+  "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": null,
+   "class": "mixed",
+   "commercial_use": "conditional",
+   "hosting_as_service": "conditional",
+   "evidence": [
+    "License file assigns different licenses to different folders."
+   ],
+   "confidence": "medium",
+   "note": "Part of the repo is permissive, part is source-available. Check which folder you depend on.",
+   "github_license_file_spdx": "NOASSERTION"
+  },
+  "metrics": {
+   "stars": 187528,
+   "forks": 45945,
+   "open_issues": 702,
+   "watchers": 1539,
+   "created": "2023-03-16",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "preview-seed-fixture",
+    "date": "2026-08-06"
+   }
+  },
+  "flags": [
+   {
+    "id": "MIXED_LICENSE",
+    "level": "risk",
+    "text": "Different folders carry different licenses; part of the repo is source-available."
+   }
+  ]
+ },
+ {
+  "repo": "ollama/ollama",
+  "url": "https://github.com/ollama/ollama",
+  "description": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 182852,
+   "forks": 18229,
+   "open_issues": 4253,
+   "watchers": 1019,
+   "created": "2023-06-26",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Go",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v0.40.3",
+    "date": "2026-10-11"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "flutter/flutter",
+  "url": "https://github.com/flutter/flutter",
+  "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "BSD-3-Clause",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX BSD-3-Clause"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "BSD-3-Clause"
+  },
+  "metrics": {
+   "stars": 179890,
+   "forks": 33836,
+   "open_issues": 13353,
+   "watchers": 3550,
+   "created": "2015-03-06",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Dart",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "3.19.0-0.1.pre",
+    "date": "2024-01-11"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "f/prompts.chat",
+  "url": "https://github.com/f/prompts.chat",
+  "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": null,
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "GitHub reported NOASSERTION, but the text resembles PublicDomain. Check for added terms (exceptions, extra restrictions)."
+   ],
+   "confidence": "medium",
+   "label": "PublicDomain",
+   "resembles": true,
+   "github_license_file_spdx": "NOASSERTION"
+  },
+  "metrics": {
+   "stars": 172688,
+   "forks": 22148,
+   "open_issues": 86,
+   "watchers": 1671,
+   "created": "2022-12-05",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "HTML",
+   "owner_type": "User",
+   "latest_release": null
+  },
+  "flags": [
+   {
+    "id": "LICENSE_TEXT_MODIFIED",
+    "level": "note",
+    "text": "GitHub could not match the license exactly; the text may contain extra terms."
+   },
+   {
+    "id": "NO_RELEASES",
+    "level": "note",
+    "text": "No tagged releases: pin a commit hash, not a version."
+   }
+  ]
+ },
+ {
+  "repo": "huggingface/transformers",
+  "url": "https://github.com/huggingface/transformers",
+  "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 167576,
+   "forks": 34847,
+   "open_issues": 2330,
+   "watchers": 1247,
+   "created": "2018-10-29",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v5.19.0",
+    "date": "2026-10-06"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "AUTOMATIC1111/stable-diffusion-webui",
+  "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+  "description": "Stable Diffusion web UI",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "AGPL-3.0",
+   "class": "network-copyleft",
+   "commercial_use": "yes",
+   "hosting_as_service": "conditional",
+   "evidence": [
+    "SPDX AGPL-3.0"
+   ],
+   "confidence": "high",
+   "note": "Users of a modified hosted version must be offered the source.",
+   "github_license_file_spdx": "AGPL-3.0"
+  },
+  "metrics": {
+   "stars": 165036,
+   "forks": 33170,
+   "open_issues": 2510,
+   "watchers": 1260,
+   "created": "2022-08-22",
+   "pushed": "2026-03-02",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "v1.10.1",
+    "date": "2025-02-09"
+   }
+  },
+  "flags": [
+   {
+    "id": "NETWORK_COPYLEFT",
+    "level": "note",
+    "text": "AGPL: offering a modified version as a service obliges you to share the source."
+   },
+   {
+    "id": "QUIET",
+    "level": "note",
+    "text": "No push for 224 days."
+   }
+  ]
+ },
+ {
+  "repo": "DietrichGebert/ponytail",
+  "url": "https://github.com/DietrichGebert/ponytail",
+  "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 161588,
+   "forks": 8714,
+   "open_issues": 54,
+   "watchers": 366,
+   "created": "2026-06-12",
+   "pushed": "2026-10-10",
+   "archived": false,
+   "language": "JavaScript",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "v5.1.0",
+    "date": "2026-10-08"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "Snailclimb/JavaGuide",
+  "url": "https://github.com/Snailclimb/JavaGuide",
+  "description": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 158964,
+   "forks": 46156,
+   "open_issues": 20,
+   "watchers": 4457,
+   "created": "2018-05-07",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "JavaScript",
+   "owner_type": "User",
+   "latest_release": null
+  },
+  "flags": [
+   {
+    "id": "NO_RELEASES",
+    "level": "note",
+    "text": "No tagged releases: pin a commit hash, not a version."
+   }
+  ]
+ },
+ {
+  "repo": "langgenius/dify",
+  "url": "https://github.com/langgenius/dify",
+  "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": null,
+   "class": "modified-permissive",
+   "commercial_use": "conditional",
+   "hosting_as_service": "conditional",
+   "evidence": [
+    "License text matches \"modified permissive\""
+   ],
+   "confidence": "medium",
+   "label": "modified permissive",
+   "note": "Permissive base with extra conditions (often multi-tenant hosting or branding). Read the added terms.",
+   "github_license_file_spdx": "NOASSERTION"
+  },
+  "metrics": {
+   "stars": 158238,
+   "forks": 25011,
+   "open_issues": 1104,
+   "watchers": 841,
+   "created": "2023-04-12",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "TypeScript",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "1.17.1",
+    "date": "2026-09-10"
+   }
+  },
+  "flags": [
+   {
+    "id": "MODIFIED_PERMISSIVE",
+    "level": "risk",
+    "text": "Apache/MIT base with additional conditions (check hosting and branding terms)."
+   }
+  ]
+ },
+ {
+  "repo": "langflow-ai/langflow",
+  "url": "https://github.com/langflow-ai/langflow",
+  "description": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 155536,
+   "forks": 10238,
+   "open_issues": 1145,
+   "watchers": 544,
+   "created": "2023-02-08",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v1.12.5",
+    "date": "2026-10-06"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "open-webui/open-webui",
+  "url": "https://github.com/open-webui/open-webui",
+  "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": null,
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "GitHub reported NOASSERTION, but the text resembles BSD. Check for added terms (exceptions, extra restrictions)."
+   ],
+   "confidence": "medium",
+   "label": "BSD",
+   "resembles": true,
+   "github_license_file_spdx": "NOASSERTION"
+  },
+  "metrics": {
+   "stars": 154522,
+   "forks": 22618,
+   "open_issues": 169,
+   "watchers": 675,
+   "created": "2023-10-06",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v0.12.0",
+    "date": "2026-10-10"
+   }
+  },
+  "flags": [
+   {
+    "id": "LICENSE_TEXT_MODIFIED",
+    "level": "note",
+    "text": "GitHub could not match the license exactly; the text may contain extra terms."
+   }
+  ]
+ },
+ {
+  "repo": "anthropics/claude-code",
+  "url": "https://github.com/anthropics/claude-code",
+  "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": null,
+   "class": "proprietary",
+   "commercial_use": "conditional",
+   "hosting_as_service": "no",
+   "evidence": [
+    "License file says \"All rights reserved\" and grants no open-source rights."
+   ],
+   "confidence": "medium",
+   "note": "Source is visible but use is governed by the vendor's own terms.",
+   "github_license_file_spdx": null
+  },
+  "metrics": {
+   "stars": 150349,
+   "forks": 26301,
+   "open_issues": 14678,
+   "watchers": 906,
+   "created": "2025-02-22",
+   "pushed": "2026-10-11",
+   "archived": false,
+   "language": "TypeScript",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v2.1.296",
+    "date": "2026-10-09"
+   }
+  },
+  "flags": [
+   {
+    "id": "PROPRIETARY",
+    "level": "risk",
+    "text": "All rights reserved: visible source, but no open-source rights. Use is governed by the vendor's terms."
+   }
+  ]
+ },
+ {
+  "repo": "langchain-ai/langchain",
+  "url": "https://github.com/langchain-ai/langchain",
+  "description": "The agent engineering platform.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 147685,
+   "forks": 24769,
+   "open_issues": 642,
+   "watchers": 924,
+   "created": "2022-10-17",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "langchain==1.4.4",
+    "date": "2026-10-08"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "x1xhlol/system-prompts-and-models-of-ai-tools",
+  "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+  "description": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "GPL-3.0",
+   "class": "strong-copyleft",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX GPL-3.0"
+   ],
+   "confidence": "high",
+   "note": "Distributing a combined work requires GPL-compatible release; plain hosting does not.",
+   "github_license_file_spdx": "GPL-3.0"
+  },
+  "metrics": {
+   "stars": 143954,
+   "forks": 34760,
+   "open_issues": 164,
+   "watchers": 1681,
+   "created": "2025-03-05",
+   "pushed": "2026-08-11",
+   "archived": false,
+   "language": null,
+   "owner_type": "User",
+   "latest_release": null
+  },
+  "flags": [
+   {
+    "id": "NO_RELEASES",
+    "level": "note",
+    "text": "No tagged releases: pin a commit hash, not a version."
+   }
+  ]
+ },
+ {
+  "repo": "farion1231/cc-switch",
+  "url": "https://github.com/farion1231/cc-switch",
+  "description": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 143221,
+   "forks": 9527,
+   "open_issues": 1963,
+   "watchers": 265,
+   "created": "2025-08-04",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Rust",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "v4.0.9",
+    "date": "2026-10-11"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "github/spec-kit",
+  "url": "https://github.com/github/spec-kit",
+  "description": "💫 Toolkit to help you get started with SDD or any other process!",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 140933,
+   "forks": 12617,
+   "open_issues": 178,
+   "watchers": 720,
+   "created": "2025-08-21",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v1.1.3",
+    "date": "2026-10-09"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "Comfy-Org/ComfyUI",
+  "url": "https://github.com/Comfy-Org/ComfyUI",
+  "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "GPL-3.0",
+   "class": "strong-copyleft",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX GPL-3.0"
+   ],
+   "confidence": "high",
+   "note": "Distributing a combined work requires GPL-compatible release; plain hosting does not.",
+   "github_license_file_spdx": "GPL-3.0"
+  },
+  "metrics": {
+   "stars": 137083,
+   "forks": 16319,
+   "open_issues": 5141,
+   "watchers": 828,
+   "created": "2023-01-17",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v0.39.0",
+    "date": "2026-10-05"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "morluto/rea",
+  "url": "https://github.com/morluto/rea",
+  "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 136410,
+   "forks": 30661,
+   "open_issues": 279,
+   "watchers": 434,
+   "created": "2026-04-14",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "TypeScript",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "rea-agents-6.4.0",
+    "date": "2026-10-11"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "harry0703/MoneyPrinterTurbo",
+  "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+  "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 130139,
+   "forks": 20393,
+   "open_issues": 93,
+   "watchers": 801,
+   "created": "2024-03-11",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "v1.3.8",
+    "date": "2026-10-03"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "Graphify-Labs/graphify",
+  "url": "https://github.com/Graphify-Labs/graphify",
+  "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 125749,
+   "forks": 12139,
+   "open_issues": 1550,
+   "watchers": 397,
+   "created": "2026-04-03",
+   "pushed": "2026-10-11",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v0.9.86",
+    "date": "2026-10-11"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "shadcn-ui/ui",
+  "url": "https://github.com/shadcn-ui/ui",
+  "description": "Composable, accessible components with thoughtful defaults. Build your own component library with code you can customize, extend, and make your own.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 125407,
+   "forks": 12974,
+   "open_issues": 1783,
+   "watchers": 425,
+   "created": "2023-01-04",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "TypeScript",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "shadcn@4.21.4",
+    "date": "2026-10-07"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "microsoft/generative-ai-for-beginners",
+  "url": "https://github.com/microsoft/generative-ai-for-beginners",
+  "description": "21 Lessons, Get Started Building with Generative AI ",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 121252,
+   "forks": 63895,
+   "open_issues": 17,
+   "watchers": 1010,
+   "created": "2023-06-19",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Jupyter Notebook",
+   "owner_type": "Organization",
+   "latest_release": null
+  },
+  "flags": [
+   {
+    "id": "NO_RELEASES",
+    "level": "note",
+    "text": "No tagged releases: pin a commit hash, not a version."
+   }
+  ]
+ },
+ {
+  "repo": "browser-use/browser-use",
+  "url": "https://github.com/browser-use/browser-use",
+  "description": "Agents that use the browser.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 117720,
+   "forks": 13026,
+   "open_issues": 525,
+   "watchers": 480,
+   "created": "2024-10-31",
+   "pushed": "2026-10-09",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "0.13.11",
+    "date": "2026-10-07"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "supabase/supabase",
+  "url": "https://github.com/supabase/supabase",
+  "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 111401,
+   "forks": 16573,
+   "open_issues": 1145,
+   "watchers": 753,
+   "created": "2019-10-12",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "TypeScript",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v1.26.08",
+    "date": "2026-08-07"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "JuliusBrussee/caveman",
+  "url": "https://github.com/JuliusBrussee/caveman",
+  "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 111160,
+   "forks": 6436,
+   "open_issues": 60,
+   "watchers": 254,
+   "created": "2026-04-04",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Go",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "v3.2.0",
+    "date": "2026-10-08"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "TauricResearch/TradingAgents",
+  "url": "https://github.com/TauricResearch/TradingAgents",
+  "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 110755,
+   "forks": 21333,
+   "open_issues": 104,
+   "watchers": 833,
+   "created": "2024-12-28",
+   "pushed": "2026-10-03",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v0.6.0",
+    "date": "2026-10-03"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "google-gemini/gemini-cli",
+  "url": "https://github.com/google-gemini/gemini-cli",
+  "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 107293,
+   "forks": 14701,
+   "open_issues": 757,
+   "watchers": 589,
+   "created": "2025-04-17",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "TypeScript",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v0.65.0-nightly.20261012.g9b6e0265d",
+    "date": "2026-10-12"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "rasbt/LLMs-from-scratch",
+  "url": "https://github.com/rasbt/LLMs-from-scratch",
+  "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": null,
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "GitHub reported NOASSERTION, but the text resembles Apache-2.0. Check for added terms (exceptions, extra restrictions)."
+   ],
+   "confidence": "medium",
+   "label": "Apache-2.0",
+   "resembles": true,
+   "github_license_file_spdx": "NOASSERTION"
+  },
+  "metrics": {
+   "stars": 106416,
+   "forks": 16377,
+   "open_issues": 3,
+   "watchers": 866,
+   "created": "2023-07-23",
+   "pushed": "2026-10-02",
+   "archived": false,
+   "language": "Jupyter Notebook",
+   "owner_type": "User",
+   "latest_release": null
+  },
+  "flags": [
+   {
+    "id": "LICENSE_TEXT_MODIFIED",
+    "level": "note",
+    "text": "GitHub could not match the license exactly; the text may contain extra terms."
+   },
+   {
+    "id": "NO_RELEASES",
+    "level": "note",
+    "text": "No tagged releases: pin a commit hash, not a version."
+   }
+  ]
+ },
+ {
+  "repo": "addyosmani/agent-skills",
+  "url": "https://github.com/addyosmani/agent-skills",
+  "description": "Production-grade engineering skills for AI coding agents.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 105358,
+   "forks": 10994,
+   "open_issues": 131,
+   "watchers": 530,
+   "created": "2026-02-15",
+   "pushed": "2026-10-10",
+   "archived": false,
+   "language": "JavaScript",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "0.6.12",
+    "date": "2026-10-03"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "pytorch/pytorch",
+  "url": "https://github.com/pytorch/pytorch",
+  "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": null,
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "GitHub reported NOASSERTION, but the text resembles BSD. Check for added terms (exceptions, extra restrictions)."
+   ],
+   "confidence": "medium",
+   "label": "BSD",
+   "resembles": true,
+   "github_license_file_spdx": "NOASSERTION"
+  },
+  "metrics": {
+   "stars": 104719,
+   "forks": 32187,
+   "open_issues": 17716,
+   "watchers": 1804,
+   "created": "2016-08-13",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v2.14.1",
+    "date": "2026-09-30"
+   }
+  },
+  "flags": [
+   {
+    "id": "LICENSE_TEXT_MODIFIED",
+    "level": "note",
+    "text": "GitHub could not match the license exactly; the text may contain extra terms."
+   }
+  ]
+ },
+ {
+  "repo": "paperclipai/paperclip",
+  "url": "https://github.com/paperclipai/paperclip",
+  "description": "The open-source app everyone uses to manage agents at work",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 100712,
+   "forks": 16945,
+   "open_issues": 5955,
+   "watchers": 464,
+   "created": "2026-03-02",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "TypeScript",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v2026.1005.0",
+    "date": "2026-10-06"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "thedotmack/claude-mem",
+  "url": "https://github.com/thedotmack/claude-mem",
+  "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 99959,
+   "forks": 8769,
+   "open_issues": 99,
+   "watchers": 318,
+   "created": "2025-08-31",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "TypeScript",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "v13.35.0",
+    "date": "2026-10-09"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "hacksider/Deep-Live-Cam",
+  "url": "https://github.com/hacksider/Deep-Live-Cam",
+  "description": "real time face swap and one-click video deepfake with only a single image",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "AGPL-3.0",
+   "class": "network-copyleft",
+   "commercial_use": "yes",
+   "hosting_as_service": "conditional",
+   "evidence": [
+    "SPDX AGPL-3.0"
+   ],
+   "confidence": "high",
+   "note": "Users of a modified hosted version must be offered the source.",
+   "github_license_file_spdx": "AGPL-3.0"
+  },
+  "metrics": {
+   "stars": 96989,
+   "forks": 14126,
+   "open_issues": 44,
+   "watchers": 574,
+   "created": "2023-09-24",
+   "pushed": "2026-10-10",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "2.7.5-Ultimate",
+    "date": "2026-09-07"
+   }
+  },
+  "flags": [
+   {
+    "id": "NETWORK_COPYLEFT",
+    "level": "note",
+    "text": "AGPL: offering a modified version as a service obliges you to share the source."
+   }
+  ]
+ },
+ {
+  "repo": "Panniantong/Agent-Reach",
+  "url": "https://github.com/Panniantong/Agent-Reach",
+  "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 96443,
+   "forks": 8438,
+   "open_issues": 208,
+   "watchers": 332,
+   "created": "2026-02-24",
+   "pushed": "2026-10-08",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "v1.5.0",
+    "date": "2026-06-11"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "Leonxlnx/taste-skill",
+  "url": "https://github.com/Leonxlnx/taste-skill",
+  "description": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop ",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 94984,
+   "forks": 6462,
+   "open_issues": 6,
+   "watchers": 299,
+   "created": "2026-02-19",
+   "pushed": "2026-10-11",
+   "archived": false,
+   "language": "JavaScript",
+   "owner_type": "User",
+   "latest_release": null
+  },
+  "flags": [
+   {
+    "id": "NO_RELEASES",
+    "level": "note",
+    "text": "No tagged releases: pin a commit hash, not a version."
+   }
+  ]
+ },
+ {
+  "repo": "vllm-project/vllm",
+  "url": "https://github.com/vllm-project/vllm",
+  "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 93636,
+   "forks": 23278,
+   "open_issues": 8709,
+   "watchers": 600,
+   "created": "2023-02-09",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v0.31.0",
+    "date": "2026-10-05"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "infiniflow/ragflow",
+  "url": "https://github.com/infiniflow/ragflow",
+  "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 92061,
+   "forks": 10960,
+   "open_issues": 1384,
+   "watchers": 362,
+   "created": "2023-12-12",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Go",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "nightly",
+    "date": "2025-12-01"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "microsoft/ML-For-Beginners",
+  "url": "https://github.com/microsoft/ML-For-Beginners",
+  "description": "12 weeks, 26 lessons, 52 quizzes, classic Machine Learning for all",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 91429,
+   "forks": 22599,
+   "open_issues": 13,
+   "watchers": 1092,
+   "created": "2021-03-03",
+   "pushed": "2026-09-15",
+   "archived": false,
+   "language": "Jupyter Notebook",
+   "owner_type": "Organization",
+   "latest_release": null
+  },
+  "flags": [
+   {
+    "id": "NO_RELEASES",
+    "level": "note",
+    "text": "No tagged releases: pin a commit hash, not a version."
+   }
+  ]
+ },
+ {
+  "repo": "opencv/opencv",
+  "url": "https://github.com/opencv/opencv",
+  "description": "Open Source Computer Vision Library",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 91159,
+   "forks": 57043,
+   "open_issues": 2795,
+   "watchers": 2614,
+   "created": "2012-07-19",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "C++",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "4.14.0",
+    "date": "2026-07-19"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "PaddlePaddle/PaddleOCR",
+  "url": "https://github.com/PaddlePaddle/PaddleOCR",
+  "description": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 90966,
+   "forks": 11472,
+   "open_issues": 243,
+   "watchers": 570,
+   "created": "2020-05-08",
+   "pushed": "2026-09-16",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v3.7.0",
+    "date": "2026-06-11"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "OpenHands/OpenHands",
+  "url": "https://github.com/OpenHands/OpenHands",
+  "description": "🙌 OpenHands: AI-Driven Development",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 90699,
+   "forks": 12009,
+   "open_issues": 959,
+   "watchers": 496,
+   "created": "2024-03-13",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "TypeScript",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v1.26.0",
+    "date": "2026-10-08"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "stablyai/orca",
+  "url": "https://github.com/stablyai/orca",
+  "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 90367,
+   "forks": 5777,
+   "open_issues": 8213,
+   "watchers": 147,
+   "created": "2026-03-17",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "TypeScript",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v1.4.224",
+    "date": "2026-10-10"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "koala73/worldmonitor",
+  "url": "https://github.com/koala73/worldmonitor",
+  "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "AGPL-3.0",
+   "class": "network-copyleft",
+   "commercial_use": "yes",
+   "hosting_as_service": "conditional",
+   "evidence": [
+    "SPDX AGPL-3.0"
+   ],
+   "confidence": "high",
+   "note": "Users of a modified hosted version must be offered the source.",
+   "github_license_file_spdx": "AGPL-3.0"
+  },
+  "metrics": {
+   "stars": 88294,
+   "forks": 13500,
+   "open_issues": 364,
+   "watchers": 503,
+   "created": "2026-01-08",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "TypeScript",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "v2.10.0",
+    "date": "2026-09-08"
+   }
+  },
+  "flags": [
+   {
+    "id": "NETWORK_COPYLEFT",
+    "level": "note",
+    "text": "AGPL: offering a modified version as a service obliges you to share the source."
+   }
+  ]
+ },
+ {
+  "repo": "D4Vinci/Scrapling",
+  "url": "https://github.com/D4Vinci/Scrapling",
+  "description": "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "BSD-3-Clause",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX BSD-3-Clause"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "BSD-3-Clause"
+  },
+  "metrics": {
+   "stars": 86958,
+   "forks": 8910,
+   "open_issues": 18,
+   "watchers": 321,
+   "created": "2024-10-13",
+   "pushed": "2026-10-11",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "v0.4.15",
+    "date": "2026-08-23"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "unclecode/crawl4ai",
+  "url": "https://github.com/unclecode/crawl4ai",
+  "description": "Open-source web crawler and scraper for LLMs and AI agents: any website into clean, LLM-ready Markdown. Run it yourself, or use Crawl4AI Cloud with one key.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 85360,
+   "forks": 8862,
+   "open_issues": 232,
+   "watchers": 423,
+   "created": "2024-05-09",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "v0.9.4",
+    "date": "2026-09-23"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "NationalSecurityAgency/ghidra",
+  "url": "https://github.com/NationalSecurityAgency/ghidra",
+  "description": "Ghidra is a software reverse engineering (SRE) framework",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 84433,
+   "forks": 9380,
+   "open_issues": 2070,
+   "watchers": 1173,
+   "created": "2019-03-01",
+   "pushed": "2026-10-09",
+   "archived": false,
+   "language": "Java",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "Ghidra_12.1.4_build",
+    "date": "2026-09-21"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "bytedance/deer-flow",
+  "url": "https://github.com/bytedance/deer-flow",
+  "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 83741,
+   "forks": 11652,
+   "open_issues": 933,
+   "watchers": 339,
+   "created": "2025-05-07",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v2.1.0",
+    "date": "2026-09-24"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "lobehub/lobehub",
+  "url": "https://github.com/lobehub/lobehub",
+  "description": "🤯 LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations by hiring, scheduling, and reporting on your entire AI team.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": null,
+   "class": "modified-permissive",
+   "commercial_use": "conditional",
+   "hosting_as_service": "conditional",
+   "evidence": [
+    "License text matches \"modified permissive\""
+   ],
+   "confidence": "medium",
+   "label": "modified permissive",
+   "note": "Permissive base with extra conditions (often multi-tenant hosting or branding). Read the added terms.",
+   "github_license_file_spdx": "NOASSERTION"
+  },
+  "metrics": {
+   "stars": 83166,
+   "forks": 15970,
+   "open_issues": 1044,
+   "watchers": 304,
+   "created": "2023-05-21",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "TypeScript",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v2.2.20-canary.5",
+    "date": "2026-10-12"
+   }
+  },
+  "flags": [
+   {
+    "id": "MODIFIED_PERMISSIVE",
+    "level": "risk",
+    "text": "Apache/MIT base with additional conditions (check hosting and branding terms)."
+   }
+  ]
+ },
+ {
+  "repo": "rtk-ai/rtk",
+  "url": "https://github.com/rtk-ai/rtk",
+  "description": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 83070,
+   "forks": 5273,
+   "open_issues": 1503,
+   "watchers": 215,
+   "created": "2026-01-22",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Rust",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "dev-0.52.0-rc.525",
+    "date": "2026-10-12"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "datawhalechina/hello-agents",
+  "url": "https://github.com/datawhalechina/hello-agents",
+  "description": "📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": null,
+   "class": "non-commercial",
+   "commercial_use": "no",
+   "hosting_as_service": "no",
+   "evidence": [
+    "License text matches \"non-commercial terms\""
+   ],
+   "confidence": "medium",
+   "label": "non-commercial terms",
+   "note": "Text restricts commercial use.",
+   "github_license_file_spdx": "NOASSERTION"
+  },
+  "metrics": {
+   "stars": 82724,
+   "forks": 10258,
+   "open_issues": 114,
+   "watchers": 233,
+   "created": "2025-09-07",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "V1.0.3",
+    "date": "2026-07-17"
+   }
+  },
+  "flags": [
+   {
+    "id": "NON_COMMERCIAL",
+    "level": "risk",
+    "text": "License text restricts commercial use."
+   }
+  ]
+ },
+ {
+  "repo": "tt-a1i/archify",
+  "url": "https://github.com/tt-a1i/archify",
+  "description": "Turn any idea, plan, or codebase into a beautiful interactive diagram. An agent skill for Claude Code, Codex, and more.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 82410,
+   "forks": 5559,
+   "open_issues": 280,
+   "watchers": 228,
+   "created": "2026-04-15",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "JavaScript",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "archify-dsh-v1.0.0",
+    "date": "2026-10-04"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "d2l-ai/d2l-zh",
+  "url": "https://github.com/d2l-ai/d2l-zh",
+  "description": "《动手学深度学习》：面向中文读者、能运行、可讨论。中英文版被70多个国家的500多所大学用于教学。",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 81602,
+   "forks": 12422,
+   "open_issues": 127,
+   "watchers": 1118,
+   "created": "2017-08-23",
+   "pushed": "2024-07-30",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v2.0.0",
+    "date": "2022-12-08"
+   }
+  },
+  "flags": [
+   {
+    "id": "STALE",
+    "level": "risk",
+    "text": "No push for 804 days."
+   }
+  ]
+ },
+ {
+  "repo": "netdata/netdata",
+  "url": "https://github.com/netdata/netdata",
+  "description": "The fastest path to AI-powered full stack observability, even for lean teams.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "GPL-3.0",
+   "class": "strong-copyleft",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX GPL-3.0"
+   ],
+   "confidence": "high",
+   "note": "Distributing a combined work requires GPL-compatible release; plain hosting does not.",
+   "github_license_file_spdx": "GPL-3.0"
+  },
+  "metrics": {
+   "stars": 80897,
+   "forks": 6662,
+   "open_issues": 451,
+   "watchers": 1344,
+   "created": "2013-06-17",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Go",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v2.12.1",
+    "date": "2026-10-08"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "chrislgarry/Apollo-11",
+  "url": "https://github.com/chrislgarry/Apollo-11",
+  "description": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": null,
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "GitHub reported NOASSERTION, but the text resembles PublicDomain. Check for added terms (exceptions, extra restrictions)."
+   ],
+   "confidence": "medium",
+   "label": "PublicDomain",
+   "resembles": true,
+   "github_license_file_spdx": "NOASSERTION"
+  },
+  "metrics": {
+   "stars": 74546,
+   "forks": 8120,
+   "open_issues": 146,
+   "watchers": 1390,
+   "created": "2014-04-03",
+   "pushed": "2026-07-15",
+   "archived": false,
+   "language": "Assembly",
+   "owner_type": "User",
+   "latest_release": null
+  },
+  "flags": [
+   {
+    "id": "LICENSE_TEXT_MODIFIED",
+    "level": "note",
+    "text": "GitHub could not match the license exactly; the text may contain extra terms."
+   },
+   {
+    "id": "NO_RELEASES",
+    "level": "note",
+    "text": "No tagged releases: pin a commit hash, not a version."
+   }
+  ]
+ },
+ {
+  "repo": "heygen-com/hyperframes",
+  "url": "https://github.com/heygen-com/hyperframes",
+  "description": "Write HTML. Render video. Built for agents.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 61480,
+   "forks": 5500,
+   "open_issues": 269,
+   "watchers": 167,
+   "created": "2026-03-10",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "TypeScript",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v0.8.149",
+    "date": "2026-10-11"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "eternity4719/HowToLiveBetter",
+  "url": "https://github.com/eternity4719/HowToLiveBetter",
+  "description": "高性价比人生指南: 长寿防病、急救、省钱理财、法律红线、失业与工伤、医保社保、恋爱婚育、怀孕育儿、创业与做平台合规、出国与技能。每条写明成本、收益、证据等级和原始出处，只引期刊论文与官方文件。",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "CC-BY-4.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX CC-BY-4.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "CC-BY-4.0"
+  },
+  "metrics": {
+   "stars": 60837,
+   "forks": 5060,
+   "open_issues": 16,
+   "watchers": 178,
+   "created": "2026-09-07",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "HTML",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "epub-latest",
+    "date": "2026-09-18"
+   }
+  },
+  "flags": [
+   {
+    "id": "VERY_YOUNG",
+    "level": "note",
+    "text": "Created 35 days ago: APIs and ownership may still move."
+   }
+  ]
+ },
+ {
+  "repo": "debpalash/VoiceStudio",
+  "url": "https://github.com/debpalash/VoiceStudio",
+  "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "AGPL-3.0",
+   "class": "network-copyleft",
+   "commercial_use": "yes",
+   "hosting_as_service": "conditional",
+   "evidence": [
+    "SPDX AGPL-3.0"
+   ],
+   "confidence": "high",
+   "note": "Users of a modified hosted version must be offered the source.",
+   "github_license_file_spdx": "AGPL-3.0"
+  },
+  "metrics": {
+   "stars": 59760,
+   "forks": 6699,
+   "open_issues": 115,
+   "watchers": 236,
+   "created": "2026-04-09",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "v0.5.6",
+    "date": "2026-09-23"
+   }
+  },
+  "flags": [
+   {
+    "id": "NETWORK_COPYLEFT",
+    "level": "note",
+    "text": "AGPL: offering a modified version as a service obliges you to share the source."
+   }
+  ]
+ },
+ {
+  "repo": "bilawalsidhu/gods-eye-view",
+  "url": "https://github.com/bilawalsidhu/gods-eye-view",
+  "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": null,
+   "class": "modified-permissive",
+   "commercial_use": "conditional",
+   "hosting_as_service": "conditional",
+   "evidence": [
+    "Permissive grant, but the text also contains non-commercial terms."
+   ],
+   "confidence": "medium",
+   "note": "Likely carve-outs for third-party material; check which files they cover.",
+   "github_license_file_spdx": "NOASSERTION"
+  },
+  "metrics": {
+   "stars": 52831,
+   "forks": 10509,
+   "open_issues": 381,
+   "watchers": 1029,
+   "created": "2026-06-22",
+   "pushed": "2026-10-10",
+   "archived": false,
+   "language": "JavaScript",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "v0.2.1",
+    "date": "2026-10-03"
+   }
+  },
+  "flags": [
+   {
+    "id": "MODIFIED_PERMISSIVE",
+    "level": "risk",
+    "text": "Apache/MIT base with additional conditions (check hosting and branding terms)."
+   }
+  ]
+ },
+ {
+  "repo": "cathrynlavery/diagram-design",
+  "url": "https://github.com/cathrynlavery/diagram-design",
+  "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 51871,
+   "forks": 3269,
+   "open_issues": 87,
+   "watchers": 143,
+   "created": "2026-04-16",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "HTML",
+   "owner_type": "User",
+   "latest_release": null
+  },
+  "flags": [
+   {
+    "id": "NO_RELEASES",
+    "level": "note",
+    "text": "No tagged releases: pin a commit hash, not a version."
+   }
+  ]
+ },
+ {
+  "repo": "storytold/photocraft",
+  "url": "https://github.com/storytold/photocraft",
+  "description": "PhotoCraft: An open-source, photo editor written by scratch in pure Rust",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 51210,
+   "forks": 8390,
+   "open_issues": 1304,
+   "watchers": 211,
+   "created": "2026-09-30",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Rust",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v0.7.0",
+    "date": "2026-10-11"
+   }
+  },
+  "flags": [
+   {
+    "id": "VERY_YOUNG",
+    "level": "note",
+    "text": "Created 12 days ago: APIs and ownership may still move."
+   }
+  ]
+ },
+ {
+  "repo": "vectorize-io/hindsight",
+  "url": "https://github.com/vectorize-io/hindsight",
+  "description": "Hindsight: Agent Memory That Learns",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 48699,
+   "forks": 6011,
+   "open_issues": 148,
+   "watchers": 105,
+   "created": "2025-10-30",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v0.10.3",
+    "date": "2026-10-08"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "alibaba/open-code-review",
+  "url": "https://github.com/alibaba/open-code-review",
+  "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 46418,
+   "forks": 3379,
+   "open_issues": 301,
+   "watchers": 139,
+   "created": "2026-05-18",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Go",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v1.12.13",
+    "date": "2026-10-08"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "JustVugg/colibri",
+  "url": "https://github.com/JustVugg/colibri",
+  "description": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 41408,
+   "forks": 4573,
+   "open_issues": 113,
+   "watchers": 326,
+   "created": "2026-07-01",
+   "pushed": "2026-10-11",
+   "archived": false,
+   "language": "C",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "v2.0.0",
+    "date": "2026-10-06"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "anthropics/financial-services",
+  "url": "https://github.com/anthropics/financial-services",
+  "description": null,
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 39486,
+   "forks": 5589,
+   "open_issues": 233,
+   "watchers": 290,
+   "created": "2026-02-23",
+   "pushed": "2026-09-21",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "Organization",
+   "latest_release": null
+  },
+  "flags": [
+   {
+    "id": "NO_RELEASES",
+    "level": "note",
+    "text": "No tagged releases: pin a commit hash, not a version."
+   }
+  ]
+ },
+ {
+  "repo": "lyogavin/airllm",
+  "url": "https://github.com/lyogavin/airllm",
+  "description": "AirLLM 70B inference with single 4GB GPU",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 37099,
+   "forks": 3848,
+   "open_issues": 161,
+   "watchers": 307,
+   "created": "2023-06-12",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Jupyter Notebook",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "v4.0.0",
+    "date": "2026-09-05"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "tashfeenahmed/freellmapi",
+  "url": "https://github.com/tashfeenahmed/freellmapi",
+  "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 33656,
+   "forks": 4638,
+   "open_issues": 25,
+   "watchers": 173,
+   "created": "2026-04-21",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "TypeScript",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "v0.13.10",
+    "date": "2026-10-12"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "Tencent/WeKnora",
+  "url": "https://github.com/Tencent/WeKnora",
+  "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": null,
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "GitHub reported NOASSERTION, but the text resembles Apache-2.0. Check for added terms (exceptions, extra restrictions)."
+   ],
+   "confidence": "medium",
+   "label": "Apache-2.0",
+   "resembles": true,
+   "github_license_file_spdx": "NOASSERTION"
+  },
+  "metrics": {
+   "stars": 33459,
+   "forks": 4456,
+   "open_issues": 574,
+   "watchers": 150,
+   "created": "2025-07-22",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Go",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v0.8.2",
+    "date": "2026-09-24"
+   }
+  },
+  "flags": [
+   {
+    "id": "LICENSE_TEXT_MODIFIED",
+    "level": "note",
+    "text": "GitHub could not match the license exactly; the text may contain extra terms."
+   }
+  ]
+ },
+ {
+  "repo": "NandhaKishorM/laya",
+  "url": "https://github.com/NandhaKishorM/laya",
+  "description": "Non-autoregressive System 1 decision engine. Typed choice, score and yes/no decisions over any text in a single forward pass, in 100+ languages, with a router that picks the right checkpoint per request.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 32488,
+   "forks": 2897,
+   "open_issues": 101,
+   "watchers": 118,
+   "created": "2026-09-18",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "v0.4.6",
+    "date": "2026-10-12"
+   }
+  },
+  "flags": [
+   {
+    "id": "VERY_YOUNG",
+    "level": "note",
+    "text": "Created 24 days ago: APIs and ownership may still move."
+   }
+  ]
+ },
+ {
+  "repo": "boykopovar/AnyPS5",
+  "url": "https://github.com/boykopovar/AnyPS5",
+  "description": "Tool for automatic PS5 executables porting to Linux and Windows",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "GPL-2.0",
+   "class": "strong-copyleft",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX GPL-2.0"
+   ],
+   "confidence": "high",
+   "note": "Distributing a combined work requires GPL-compatible release; plain hosting does not.",
+   "github_license_file_spdx": "GPL-2.0"
+  },
+  "metrics": {
+   "stars": 31836,
+   "forks": 2735,
+   "open_issues": 574,
+   "watchers": 327,
+   "created": "2026-08-03",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "C++",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "v0.1.1",
+    "date": "2026-09-28"
+   }
+  },
+  "flags": [
+   {
+    "id": "VERY_YOUNG",
+    "level": "note",
+    "text": "Created 69 days ago: APIs and ownership may still move."
+   }
+  ]
+ },
+ {
+  "repo": "anywhere-labs/dsh-desktop",
+  "url": "https://github.com/anywhere-labs/dsh-desktop",
+  "description": "为 DeepSeek Harness (DSH) 插件生态打造的现代化桌面端解决方案。万物皆「插件」，桌面本身也是「插件」。",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 30554,
+   "forks": 1434,
+   "open_issues": 369,
+   "watchers": 73,
+   "created": "2026-08-13",
+   "pushed": "2026-10-10",
+   "archived": false,
+   "language": "TypeScript",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v2.0.17-beta.2",
+    "date": "2026-10-10"
+   }
+  },
+  "flags": [
+   {
+    "id": "VERY_YOUNG",
+    "level": "note",
+    "text": "Created 59 days ago: APIs and ownership may still move."
+   }
+  ]
+ },
+ {
+  "repo": "trycua/cua",
+  "url": "https://github.com/trycua/cua",
+  "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 29469,
+   "forks": 2098,
+   "open_issues": 1171,
+   "watchers": 94,
+   "created": "2025-01-31",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Rust",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "cua-spaces-v0.8.0-beta.3",
+    "date": "2026-10-10"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "anthropics/knowledge-work-plugins",
+  "url": "https://github.com/anthropics/knowledge-work-plugins",
+  "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 29229,
+   "forks": 3317,
+   "open_issues": 140,
+   "watchers": 187,
+   "created": "2026-01-23",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "Organization",
+   "latest_release": null
+  },
+  "flags": [
+   {
+    "id": "NO_RELEASES",
+    "level": "note",
+    "text": "No tagged releases: pin a commit hash, not a version."
+   }
+  ]
+ },
+ {
+  "repo": "mksglu/context-mode",
+  "url": "https://github.com/mksglu/context-mode",
+  "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and   enforces routing across 17 platforms via MCP + hooks.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": null,
+   "class": "source-available",
+   "commercial_use": "conditional",
+   "hosting_as_service": "restricted",
+   "evidence": [
+    "License text matches \"Elastic License\""
+   ],
+   "confidence": "medium",
+   "label": "Elastic License",
+   "note": "Providing it to third parties as a managed service is prohibited.",
+   "github_license_file_spdx": "NOASSERTION"
+  },
+  "metrics": {
+   "stars": 26902,
+   "forks": 1928,
+   "open_issues": 347,
+   "watchers": 103,
+   "created": "2026-02-23",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "TypeScript",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "v1.0.169",
+    "date": "2026-06-29"
+   }
+  },
+  "flags": [
+   {
+    "id": "SOURCE_AVAILABLE",
+    "level": "risk",
+    "text": "Source-available, not open source (Elastic License): hosting/resale is restricted."
+   }
+  ]
+ },
+ {
+  "repo": "browser-use/jev-ultrafast",
+  "url": "https://github.com/browser-use/jev-ultrafast",
+  "description": "Fastest and cheapest web agent",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 22711,
+   "forks": 1673,
+   "open_issues": 193,
+   "watchers": 55,
+   "created": "2026-09-16",
+   "pushed": "2026-09-30",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "Organization",
+   "latest_release": null
+  },
+  "flags": [
+   {
+    "id": "NO_RELEASES",
+    "level": "note",
+    "text": "No tagged releases: pin a commit hash, not a version."
+   },
+   {
+    "id": "VERY_YOUNG",
+    "level": "note",
+    "text": "Created 25 days ago: APIs and ownership may still move."
+   }
+  ]
+ },
+ {
+  "repo": "Niko1221/Strata",
+  "url": "https://github.com/Niko1221/Strata",
+  "description": "Qwen3.8-Flash-Next on any consumer hardware: one-click install for Windows / Linux. Strata inference engine, OpenAI/Anthropic API on localhost, optional image input.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 22357,
+   "forks": 2160,
+   "open_issues": 812,
+   "watchers": 117,
+   "created": "2026-09-24",
+   "pushed": "2026-10-11",
+   "archived": false,
+   "language": "C++",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "v0.1.43",
+    "date": "2026-10-11"
+   }
+  },
+  "flags": [
+   {
+    "id": "VERY_YOUNG",
+    "level": "note",
+    "text": "Created 17 days ago: APIs and ownership may still move."
+   }
+  ]
+ },
+ {
+  "repo": "storytold/artcraft",
+  "url": "https://github.com/storytold/artcraft",
+  "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 20268,
+   "forks": 3290,
+   "open_issues": 247,
+   "watchers": 107,
+   "created": "2022-03-31",
+   "pushed": "2026-10-11",
+   "archived": false,
+   "language": "Rust",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "artcraft-v0.41.0",
+    "date": "2026-09-26"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "earthtojake/text-to-cad",
+  "url": "https://github.com/earthtojake/text-to-cad",
+  "description": "Give your agent CAD superpowers.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 19508,
+   "forks": 1919,
+   "open_issues": 31,
+   "watchers": 98,
+   "created": "2026-04-22",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "v0.7.21",
+    "date": "2026-10-11"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "awesome-dsh-plugin/awesome-dsh-plugin",
+  "url": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
+  "description": "A curated list of plugins for DeepSeek Harness (dsh) · DeepSeek Harness 插件精选列表",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "CC0-1.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX CC0-1.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "CC0-1.0"
+  },
+  "metrics": {
+   "stars": 18494,
+   "forks": 4033,
+   "open_issues": 1044,
+   "watchers": 42,
+   "created": "2026-08-13",
+   "pushed": "2026-10-11",
+   "archived": false,
+   "language": "JavaScript",
+   "owner_type": "Organization",
+   "latest_release": null
+  },
+  "flags": [
+   {
+    "id": "NO_RELEASES",
+    "level": "note",
+    "text": "No tagged releases: pin a commit hash, not a version."
+   },
+   {
+    "id": "VERY_YOUNG",
+    "level": "note",
+    "text": "Created 60 days ago: APIs and ownership may still move."
+   }
+  ]
+ },
+ {
+  "repo": "robbietilton/Compositor",
+  "url": "https://github.com/robbietilton/Compositor",
+  "description": "The Photoshop alternative for Mac",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 16263,
+   "forks": 1548,
+   "open_issues": 58,
+   "watchers": 77,
+   "created": "2026-09-16",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Swift",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "v1.4.10",
+    "date": "2026-10-11"
+   }
+  },
+  "flags": [
+   {
+    "id": "VERY_YOUNG",
+    "level": "note",
+    "text": "Created 25 days ago: APIs and ownership may still move."
+   }
+  ]
+ },
+ {
+  "repo": "NVIDIA/OpenShell",
+  "url": "https://github.com/NVIDIA/OpenShell",
+  "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 15929,
+   "forks": 1768,
+   "open_issues": 599,
+   "watchers": 75,
+   "created": "2026-02-24",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Rust",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "dev",
+    "date": "2026-03-18"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "openai/math",
+  "url": "https://github.com/openai/math",
+  "description": null,
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 14309,
+   "forks": 1611,
+   "open_issues": 0,
+   "watchers": 310,
+   "created": "2026-10-06",
+   "pushed": "2026-10-08",
+   "archived": false,
+   "language": "Lean",
+   "owner_type": "Organization",
+   "latest_release": null
+  },
+  "flags": [
+   {
+    "id": "NO_RELEASES",
+    "level": "note",
+    "text": "No tagged releases: pin a commit hash, not a version."
+   },
+   {
+    "id": "VERY_YOUNG",
+    "level": "note",
+    "text": "Created 5 days ago: APIs and ownership may still move."
+   }
+  ]
+ },
+ {
+  "repo": "dataelement/dsh-desktop",
+  "url": "https://github.com/dataelement/dsh-desktop",
+  "description": "DSHDesktop：DeepSeek Harness Desktop / DeepSeek Harness 桌面版",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 13538,
+   "forks": 485,
+   "open_issues": 177,
+   "watchers": 51,
+   "created": "2026-08-13",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "TypeScript",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v0.11.1",
+    "date": "2026-10-09"
+   }
+  },
+  "flags": [
+   {
+    "id": "VERY_YOUNG",
+    "level": "note",
+    "text": "Created 60 days ago: APIs and ownership may still move."
+   }
+  ]
+ },
+ {
+  "repo": "google/artemis",
+  "url": "https://github.com/google/artemis",
+  "description": "ARTEMIS turns natural-language instructions into reliable Android automation. It automates end-to-end workflows, captures logs, and integrates seamlessly with AI coding assistants such as Antigravity, Codex, and Claude Code.  It also achieves 99%+ success rate on AndroidWorld Benchmark.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 11415,
+   "forks": 1175,
+   "open_issues": 135,
+   "watchers": 136,
+   "created": "2026-08-13",
+   "pushed": "2026-10-01",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "Organization",
+   "latest_release": null
+  },
+  "flags": [
+   {
+    "id": "NO_RELEASES",
+    "level": "note",
+    "text": "No tagged releases: pin a commit hash, not a version."
+   },
+   {
+    "id": "VERY_YOUNG",
+    "level": "note",
+    "text": "Created 59 days ago: APIs and ownership may still move."
+   }
+  ]
+ },
+ {
+  "repo": "cursor/plugins",
+  "url": "https://github.com/cursor/plugins",
+  "description": "Cursor plugin specification and official plugins",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": null,
+   "class": "none",
+   "commercial_use": "no",
+   "hosting_as_service": "no",
+   "evidence": [
+    "No license file found: default copyright applies, no permission is granted."
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": null
+  },
+  "metrics": {
+   "stars": 11001,
+   "forks": 1062,
+   "open_issues": 220,
+   "watchers": 52,
+   "created": "2026-01-23",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "TypeScript",
+   "owner_type": "Organization",
+   "latest_release": null
+  },
+  "flags": [
+   {
+    "id": "NO_LICENSE",
+    "level": "risk",
+    "text": "No license file: you have no right to use, modify or redistribute it."
+   },
+   {
+    "id": "NO_RELEASES",
+    "level": "note",
+    "text": "No tagged releases: pin a commit hash, not a version."
+   }
+  ]
+ },
+ {
+  "repo": "tester-army/e2e",
+  "url": "https://github.com/tester-army/e2e",
+  "description": "Next generation e2e testing framework for web and mobile apps.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 9367,
+   "forks": 452,
+   "open_issues": 105,
+   "watchers": 22,
+   "created": "2026-07-22",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "TypeScript",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "e2e@0.19.0",
+    "date": "2026-10-09"
+   }
+  },
+  "flags": [
+   {
+    "id": "VERY_YOUNG",
+    "level": "note",
+    "text": "Created 82 days ago: APIs and ownership may still move."
+   }
+  ]
+ },
+ {
+  "repo": "TencentCloud/Octop",
+  "url": "https://github.com/TencentCloud/Octop",
+  "description": "A smarter, self-hosted AI assistant — multi-user, multi-agent.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 8846,
+   "forks": 1089,
+   "open_issues": 767,
+   "watchers": 63,
+   "created": "2026-07-08",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v1.0.2b7",
+    "date": "2026-10-12"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "EpicGames/raddebugger",
+  "url": "https://github.com/EpicGames/raddebugger",
+  "description": "A native, user-mode, multi-process, graphical debugger.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 8430,
+   "forks": 407,
+   "open_issues": 322,
+   "watchers": 63,
+   "created": "2024-01-10",
+   "pushed": "2026-10-07",
+   "archived": false,
+   "language": "C",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v0.9.29-alpha",
+    "date": "2026-09-30"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "mvschwarz/openrig",
+  "url": "https://github.com/mvschwarz/openrig",
+  "description": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 7123,
+   "forks": 538,
+   "open_issues": 139,
+   "watchers": 28,
+   "created": "2026-04-01",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "TypeScript",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "v0.6.10",
+    "date": "2026-10-12"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "agent-substrate/substrate",
+  "url": "https://github.com/agent-substrate/substrate",
+  "description": "Agent Substrate: the core system",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "Apache-2.0",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX Apache-2.0"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "Apache-2.0"
+  },
+  "metrics": {
+   "stars": 4918,
+   "forks": 553,
+   "open_issues": 762,
+   "watchers": 27,
+   "created": "2026-05-13",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "Go",
+   "owner_type": "Organization",
+   "latest_release": {
+    "tag": "v0.4.0",
+    "date": "2026-10-08"
+   }
+  },
+  "flags": []
+ },
+ {
+  "repo": "danyuchn/asd-ste100-skill",
+  "url": "https://github.com/danyuchn/asd-ste100-skill",
+  "description": "ASD-STE100 Simplified Technical English rules, repurposed as a Claude Code skill for rewriting ambiguous agent-facing English.",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": "MIT",
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "SPDX MIT"
+   ],
+   "confidence": "high",
+   "github_license_file_spdx": "MIT"
+  },
+  "metrics": {
+   "stars": 4648,
+   "forks": 268,
+   "open_issues": 6,
+   "watchers": 10,
+   "created": "2026-07-20",
+   "pushed": "2026-10-04",
+   "archived": false,
+   "language": "Python",
+   "owner_type": "User",
+   "latest_release": null
+  },
+  "flags": [
+   {
+    "id": "NO_RELEASES",
+    "level": "note",
+    "text": "No tagged releases: pin a commit hash, not a version."
+   },
+   {
+    "id": "VERY_YOUNG",
+    "level": "note",
+    "text": "Created 83 days ago: APIs and ownership may still move."
+   }
+  ]
+ },
+ {
+  "repo": "ranxianglei/billion-context",
+  "url": "https://github.com/ranxianglei/billion-context",
+  "description": "A context-compression plugin for small context windows (a 100K context is enough), token savings (5x fewer tokens), and month-long single sessions (billions of tokens).上下文压缩插件，兼顾小窗口(100k上下文足矣)省token(省5倍token)和超长会话(数月级别几十亿token单会话)。billion-context is all you need",
+  "checked_at": "2026-10-12",
+  "license": {
+   "spdx": null,
+   "class": "permissive",
+   "commercial_use": "yes",
+   "hosting_as_service": "yes",
+   "evidence": [
+    "GitHub reported NOASSERTION, but the text resembles MIT. Check for added terms (exceptions, extra restrictions)."
+   ],
+   "confidence": "medium",
+   "label": "MIT",
+   "resembles": true,
+   "github_license_file_spdx": "NOASSERTION"
+  },
+  "metrics": {
+   "stars": 1064,
+   "forks": 89,
+   "open_issues": 219,
+   "watchers": 2,
+   "created": "2026-08-06",
+   "pushed": "2026-10-12",
+   "archived": false,
+   "language": "TypeScript",
+   "owner_type": "User",
+   "latest_release": {
+    "tag": "v0.1.195",
+    "date": "2026-10-12"
+   }
+  },
+  "flags": [
+   {
+    "id": "LICENSE_TEXT_MODIFIED",
+    "level": "note",
+    "text": "GitHub could not match the license exactly; the text may contain extra terms."
+   },
+   {
+    "id": "VERY_YOUNG",
+    "level": "note",
+    "text": "Created 67 days ago: APIs and ownership may still move."
+   }
+  ]
+ }
+]

@@ -1,0 +1,39 @@
+{
+  "name": "ossay",
+  "version": "0.1.0",
+  "description": "Assay an open-source repo before you adopt it: license reality, hosting rights, and activity signals in one card.",
+  "type": "module",
+  "bin": {
+    "ossay": "bin/ossay.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "license",
+    "open-source",
+    "due-diligence",
+    "github",
+    "ai",
+    "agents",
+    "supply-chain"
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hesong0222-dev/ossay.git"
+  },
+  "homepage": "https://github.com/hesong0222-dev/ossay#readme",
+  "bugs": {
+    "url": "https://github.com/hesong0222-dev/ossay/issues"
+  }
+}

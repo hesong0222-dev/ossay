@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" role="img" aria-label="Ossay">
+  <rect width="640" height="160" rx="20" fill="#0d1117"/>
+  <g transform="translate(36,28)">
+    <path d="M52 0 L104 20 V56 C104 84 82 100 52 108 C22 100 0 84 0 56 V20 Z" fill="none" stroke="#e3b341" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M30 56 L47 73 L77 38" fill="none" stroke="#e3b341" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="168" y="98" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="64" font-weight="700" fill="#f0f6fc">ossay</text>
+  <text x="170" y="128" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="17" fill="#8b949e">assay before you adopt.</text>
+</svg>
