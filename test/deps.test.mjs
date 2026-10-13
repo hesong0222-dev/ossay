@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { parsePackageJson, parseRequirements, parsePyproject, parseGoMod, githubRepo, licenseMismatch, depResult, summarize } from '../src/deps.mjs';
+import { parsePackageJson, parseRequirements, parsePyproject, parseGoMod, parseCargoToml, githubRepo, licenseMismatch, depResult, summarize } from '../src/deps.mjs';
 
 test('package.json: dependencies and devDependencies are both read and told apart', () => {
   const d = parsePackageJson('{"dependencies":{"express":"^4"},"devDependencies":{"@types/node":"20"}}');
@@ -20,6 +20,11 @@ test('pyproject.toml: [project].dependencies only, extras brackets do not end th
 test('go.mod: require lines and blocks, indirect entries skipped', () => {
   const t = 'module m\n\nrequire github.com/a/b v1.0.0\n\nrequire (\n\tgithub.com/c/d/v2 v2.1.0\n\tgolang.org/x/net v0.1.0 // indirect\n)\n';
   assert.deepEqual(parseGoMod(t).map((x) => x.name).sort(), ['github.com/a/b', 'github.com/c/d/v2']);
+});
+
+test('Cargo.toml: [dependencies] only; path and git dependencies skipped; package rename read', () => {
+  const t = '[package]\nname = "x"\n\n[dependencies]\nserde = { version = "1", features = ["derive"] }\nanyhow = "1.0" # errors\nlocal = { path = "../local" }\nfork = { git = "https://github.com/a/b" }\nrenamed = { package = "tokio", version = "1" }\n\n[dev-dependencies]\nproptest = "1"\n';
+  assert.deepEqual(parseCargoToml(t).map((x) => x.name), ['serde', 'anyhow', 'tokio']);
 });
 
 test('github repo from registry URLs; non-GitHub hosts stay unresolved', () => {

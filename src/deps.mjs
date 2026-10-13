@@ -41,6 +41,14 @@ export function parseGoMod(text) {
     .map((l) => { const [name, spec] = l.split(/\s+/); return { ecosystem: 'go', type: 'prod', name, spec }; });
 }
 
+// [dependencies] of a Cargo.toml (`name = "1"` or inline tables). Path and git dependencies are not on crates.io and are skipped.
+export function parseCargoToml(text) {
+  const section = text.split(/^\[/m).find((s) => /^dependencies\]/.test(s));
+  if (!section) return [];
+  return section.split('\n').slice(1).map((l) => l.replace(/#.*$/, '').trim()).filter((l) => /^[\w-]+\s*=/.test(l) && !/\b(path|git)\s*=/.test(l))
+    .map((l) => { const [k, v] = l.split(/=(.*)/s); const pkg = v.match(/\bpackage\s*=\s*"([^"]+)"/); return { ecosystem: 'cargo', type: 'prod', name: pkg ? pkg[1] : k.trim(), spec: v.trim() }; });
+}
+
 export function readManifests(dir) {
   const found = [];
   const deps = [];
@@ -49,6 +57,7 @@ export function readManifests(dir) {
   use('requirements.txt', parseRequirements);
   use('pyproject.toml', parsePyproject);
   use('go.mod', parseGoMod);
+  use('Cargo.toml', parseCargoToml);
   const seen = new Set();
   return { manifests: found, deps: deps.filter((d) => { const k = `${d.ecosystem}:${d.name.toLowerCase()}`; return seen.has(k) ? false : seen.add(k); }) };
 }
@@ -100,6 +109,12 @@ export async function resolve(dep) {
   if (dep.ecosystem === 'go') {
     const m = dep.name.match(/^github\.com\/([\w.-]+)\/([\w.-]+)/);
     return { repo: m ? `${m[1]}/${m[2]}` : null, registry_license: null, reason: m ? null : 'module path is not on github.com' };
+  }
+  if (dep.ecosystem === 'cargo') {
+    const meta = await getJson(`https://crates.io/api/v1/crates/${encodeURIComponent(dep.name)}`);
+    if (!meta) return { repo: null, registry_license: null, reason: 'not on crates.io' };
+    const v = meta.versions.find((x) => x.num === meta.crate.max_stable_version) || meta.versions[0];
+    return { repo: githubRepo(meta.crate.repository), registry_license: v?.license || null };
   }
   return { repo: null, registry_license: null };
 }

@@ -14,7 +14,7 @@ Usage:
   ossay scan <file> [--out results.json] [--csv results.csv]   (file: one repo per line, or a JSON array of "owner/repo")
   ossay history <owner/repo> [--since YYYY-MM-DD] [--json]   (commits that touched LICENSE/COPYING on the default branch; default: last 12 months)
   ossay ledger <file> [--since YYYY-MM-DD] [--out changes.json]   (history for every repo in the file)
-  ossay deps [path] [--json | --md] [--fail-on risk|maintenance] [--all]   (direct deps in package.json, requirements.txt, pyproject.toml, go.mod)
+  ossay deps [path] [--json | --md] [--fail-on risk|maintenance] [--all]   (direct deps in package.json, requirements.txt, pyproject.toml, go.mod, Cargo.toml)
 
 Cache: GitHub responses are kept 24 h in ~/.cache/ossay (--no-cache to skip).
 Auth: uses GITHUB_TOKEN / GH_TOKEN, or \`gh auth token\` if available (60 req/h without).

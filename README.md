@@ -52,8 +52,8 @@ npx github:hesong0222-dev/ossay deps [path] [--json | --md] [--fail-on risk|main
 `history` lists every commit on the default branch that touched `LICENSE*`, `LICENCE*` or `COPYING*`, reads the file before and after,
 and labels the change: `class-change` (the reading changed), `wording`, `cosmetic` (only years / copyright lines), `added`, `removed`, `moved`.
 
-`deps` reads the **direct** dependencies in `package.json` (dependencies and devDependencies), `requirements.txt`, `pyproject.toml` (`[project].dependencies`) and `go.mod` (`require`, without `// indirect`).
-It finds each GitHub repo from the registry (npm `repository`, PyPI `project_urls`, Go module paths on `github.com`; anything else stays `unresolved`, never guessed),
+`deps` reads the **direct** dependencies in `package.json` (dependencies and devDependencies), `requirements.txt`, `pyproject.toml` (`[project].dependencies`) `go.mod` (`require`, without `// indirect`) and `Cargo.toml` (`[dependencies]`, without path/git entries).
+It finds each GitHub repo from the registry (npm `repository`, PyPI `project_urls`, crates.io `repository`, Go module paths on `github.com`; anything else stays `unresolved`, never guessed),
 runs the same card, and compares the **registry's license field with the repo's license file**: `REGISTRY_LICENSE_MISMATCH` is a risk when the file is more restrictive than what npm/PyPI says.
 For monorepo packages it reads the package folder's own license file. Results are split in two: **License** (no license, non-commercial, source-available, proprietary, mixed, modified-permissive, custom, registry mismatch) and **Maintenance** (archived, stale, quiet, no releases), which says nothing about your right to use the code. License comes first; Maintenance shows the count and the first 5, `--all` lists every one. `--md` prints a table for a PR; `--fail-on risk` exits 1 only on a License risk, `--fail-on maintenance` also on any Maintenance note (for CI).
 
