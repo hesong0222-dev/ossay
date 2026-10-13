@@ -694,15 +694,15 @@
   "checked_at": "2026-10-12",
   "license": {
    "spdx": null,
-   "class": "permissive",
-   "commercial_use": "yes",
-   "hosting_as_service": "yes",
+   "class": "modified-permissive",
+   "commercial_use": "conditional",
+   "hosting_as_service": "conditional",
    "evidence": [
-    "GitHub reported NOASSERTION, but the text resembles BSD. Check for added terms (exceptions, extra restrictions)."
+    "Permissive grant with an added clause that overrides part of it."
    ],
    "confidence": "medium",
-   "label": "BSD",
-   "resembles": true,
+   "label": "modified permissive",
+   "note": "Read the added clause (often branding or attribution on product surfaces).",
    "github_license_file_spdx": "NOASSERTION"
   },
   "metrics": {
@@ -722,9 +722,9 @@
   },
   "flags": [
    {
-    "id": "LICENSE_TEXT_MODIFIED",
-    "level": "note",
-    "text": "GitHub could not match the license exactly; the text may contain extra terms."
+    "id": "MODIFIED_PERMISSIVE",
+    "level": "risk",
+    "text": "Apache/MIT base with additional conditions (check hosting and branding terms)."
    }
   ]
  },
@@ -2672,10 +2672,10 @@
    "commercial_use": "yes",
    "hosting_as_service": "yes",
    "evidence": [
-    "GitHub reported NOASSERTION, but the text resembles Apache-2.0. Check for added terms (exceptions, extra restrictions)."
+    "GitHub reported NOASSERTION, but the text resembles MIT. Check for added terms (exceptions, extra restrictions)."
    ],
    "confidence": "medium",
-   "label": "Apache-2.0",
+   "label": "MIT",
    "resembles": true,
    "github_license_file_spdx": "NOASSERTION"
   },
@@ -3570,15 +3570,15 @@
   "checked_at": "2026-10-12",
   "license": {
    "spdx": null,
-   "class": "permissive",
-   "commercial_use": "yes",
-   "hosting_as_service": "yes",
+   "class": "modified-permissive",
+   "commercial_use": "conditional",
+   "hosting_as_service": "conditional",
    "evidence": [
-    "GitHub reported NOASSERTION, but the text resembles MIT. Check for added terms (exceptions, extra restrictions)."
+    "Permissive grant with an added clause that overrides part of it."
    ],
    "confidence": "medium",
-   "label": "MIT",
-   "resembles": true,
+   "label": "modified permissive",
+   "note": "Read the added clause (often branding or attribution on product surfaces).",
    "github_license_file_spdx": "NOASSERTION"
   },
   "metrics": {
@@ -3598,9 +3598,9 @@
   },
   "flags": [
    {
-    "id": "LICENSE_TEXT_MODIFIED",
-    "level": "note",
-    "text": "GitHub could not match the license exactly; the text may contain extra terms."
+    "id": "MODIFIED_PERMISSIVE",
+    "level": "risk",
+    "text": "Apache/MIT base with additional conditions (check hosting and branding terms)."
    },
    {
     "id": "VERY_YOUNG",

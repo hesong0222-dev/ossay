@@ -64,3 +64,40 @@ test('MIT grant with third-party non-commercial carve-outs is not a non-commerci
   const r = classify('NOASSERTION', 'MIT License\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\n\nThird-party data: CC BY-NC-SA 3.0 NonCommercial. NOT for commercial use.');
   assert.equal(r.class, 'modified-permissive');
 });
+
+test('GPL text ("occasionally and noncommercially") is not read as a non-commercial license', () => {
+  const r = classify(null, 'GNU AFFERO GENERAL PUBLIC LICENSE\nVersion 3\n... c) Convey individual copies of the object code ... This alternative is allowed only occasionally and noncommercially ...');
+  assert.equal(r.class, 'network-copyleft');
+});
+
+test('GPLv2 "only for noncommercial distribution" and the Unlicense "commercial or non-commercial" are not restrictions', () => {
+  assert.equal(classify(null, 'GNU GENERAL PUBLIC LICENSE Version 2 ... (This alternative is allowed only for noncommercial distribution and only if you received the program in object code)').class, 'strong-copyleft');
+  assert.equal(classify(null, 'Apache License\nVersion 2.0, January 2004 ... vendored: This library is free for commercial and non-commercial use as long as the following conditions are adhered to.').class, 'permissive');
+  assert.equal(classify(null, 'This is free and unencumbered software released into the public domain. Anyone is free to copy ... for any purpose, commercial or non-commercial').class, 'permissive');
+});
+
+test('the license named first wins over third-party notices further down', () => {
+  const r = classify(null, 'This project is licensed under the MIT License except for the third-party components listed below.\nPermission is hereby granted, free of charge, to any person\n...\nApache License\nVersion 2.0, January 2004\n... CC0 1.0 Universal');
+  assert.equal(r.label, 'MIT');
+});
+
+test('CC BY 4.0 text is permissive', () => {
+  assert.equal(classify(null, 'Attribution 4.0 International (CC BY 4.0)\n\nThis work is licensed under the Creative Commons Attribution 4.0 International License.').class, 'permissive');
+});
+
+test('AGPL with per-directory BSL is mixed, also when the phrase wraps lines', () => {
+  assert.equal(classify(null, 'GNU AFFERO GENERAL PUBLIC LICENSE ... The following directories each contain their own LICENSE file with the Business\nSource License 1.1: web/').class, 'mixed');
+});
+
+test('AGPL notice that mentions non-commercial model terms stays AGPL', () => {
+  assert.equal(classify(null, 'GNU AFFERO GENERAL PUBLIC LICENSE\nThe model licence records distinguish inspected non-commercial terms from unreviewed upstream metadata.').class, 'network-copyleft');
+});
+
+test('full Apache text "subject to the additional conditions" is modified-permissive', () => {
+  assert.equal(classify(null, 'Multica is provided under the terms of the Apache License, Version 2.0 — the complete, unmodified text of which is reproduced in Part II — subject to the additional conditions in Part I.\n\nApache License\nVersion 2.0, January 2004').class, 'modified-permissive');
+});
+
+test('BSD text with a "Notwithstanding any other provision" branding clause is modified-permissive', () => {
+  const r = classify(null, 'Redistribution and use in source and binary forms, with or without modification, are permitted ... 4. Notwithstanding any other provision of this License, licensees are strictly prohibited from altering or removing any branding.');
+  assert.equal(r.class, 'modified-permissive');
+});

@@ -4,12 +4,15 @@ import { parseRepo, fetchRepo } from '../src/github.mjs';
 import { classify } from '../src/license.mjs';
 import { buildFlags } from '../src/flags.mjs';
 import { buildCard, renderText, renderMarkdown } from '../src/card.mjs';
+import { history, renderHistory } from '../src/history.mjs';
 
 const HELP = `ossay — assay an open-source repo before you adopt it
 
 Usage:
   ossay check <owner/repo | github url> [--json | --md]
   ossay scan <file> [--out results.json] [--csv results.csv]   (file: one repo per line, or a JSON array of "owner/repo")
+  ossay history <owner/repo> [--since YYYY-MM-DD] [--json]   (commits that touched LICENSE/COPYING on the default branch; default: last 12 months)
+  ossay ledger <file> [--since YYYY-MM-DD] [--out changes.json]   (history for every repo in the file)
 
 Auth: uses GITHUB_TOKEN / GH_TOKEN, or \`gh auth token\` if available (60 req/h without).
 Heuristic output from public GitHub data. Not legal advice.`;
@@ -20,6 +23,16 @@ export async function check(input) {
   const lic = classify(data.repo.license ? data.repo.license.spdx_id : null, data.licenseText);
   const flags = buildFlags({ repo: data.repo, lic, latestRelease: data.latestRelease });
   return buildCard({ repo: data.repo, lic, flags, latestRelease: data.latestRelease });
+}
+
+function readList(path) {
+  const raw = readFileSync(path, 'utf8').trim();
+  return raw.startsWith('[') ? JSON.parse(raw).map((x) => (typeof x === 'string' ? x : x.full)) : raw.split('\n').map((l) => l.trim()).filter(Boolean);
+}
+
+async function pool(list, n, fn) {
+  const queue = [...list];
+  await Promise.all(Array.from({ length: n }, async () => { while (queue.length) await fn(queue.shift()); }));
 }
 
 function csvEscape(v) { const s = v == null ? '' : String(v); return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s; }
@@ -34,16 +47,11 @@ async function main() {
     return;
   }
   if (cmd === 'scan' && arg) {
-    const raw = readFileSync(arg, 'utf8').trim();
-    const list = raw.startsWith('[') ? JSON.parse(raw).map((x) => (typeof x === 'string' ? x : x.full)) : raw.split('\n').map((l) => l.trim()).filter(Boolean);
-    const out = [], queue = [...list];
-    const worker = async () => {
-      while (queue.length) {
-        const r = queue.shift();
-        try { out.push(await check(r)); } catch (e) { out.push({ repo: r, error: e.message }); console.error(`! ${r}: ${e.message}`); }
-      }
-    };
-    await Promise.all([worker(), worker(), worker(), worker()]);
+    const list = readList(arg);
+    const out = [];
+    await pool(list, 4, async (r) => {
+      try { out.push(await check(r)); } catch (e) { out.push({ repo: r, error: e.message }); console.error(`! ${r}: ${e.message}`); }
+    });
     out.sort((a, b) => (b.metrics?.stars ?? -1) - (a.metrics?.stars ?? -1));
     const jsonPath = opt('--out') || 'ossay-results.json';
     writeFileSync(jsonPath, JSON.stringify(out, null, 1));
@@ -54,6 +62,26 @@ async function main() {
       writeFileSync(csvPath, [head, ...rows].map((r) => r.map(csvEscape).join(',')).join('\n') + '\n');
     }
     console.log(`scanned ${out.filter((c) => !c.error).length}/${list.length} → ${jsonPath}${csvPath ? ` , ${csvPath}` : ''}`);
+    return;
+  }
+  const since = opt('--since') || new Date(Date.now() - 365 * 86400000).toISOString().slice(0, 10);
+  if (cmd === 'history' && arg) {
+    const h = await history(parseRepo(arg), since);
+    console.log(rest.includes('--json') ? JSON.stringify(h, null, 2) : renderHistory(h));
+    return;
+  }
+  if (cmd === 'ledger' && arg) {
+    const list = [...new Set(readList(arg).map(parseRepo))];
+    const results = [];
+    await pool(list, 3, async (r) => {
+      try { results.push(await history(r, since)); } catch (e) { results.push({ repo: r, error: e.message }); console.error(`! ${r}: ${e.message}`); }
+    });
+    results.sort((a, b) => a.repo.localeCompare(b.repo));
+    const outPath = opt('--out') || 'ossay-ledger.json';
+    writeFileSync(outPath, JSON.stringify({ generated: new Date().toISOString().slice(0, 10), since, repos: list.length, results }, null, 1));
+    const changes = results.flatMap((r) => r.changes || []);
+    const count = (k) => changes.filter((c) => c.kind === k).length;
+    console.log(`${results.filter((r) => !r.error).length}/${list.length} repos · ${['class-change', 'wording', 'cosmetic', 'added', 'removed', 'moved'].map((k) => `${count(k)} ${k}`).join(', ')} → ${outPath}`);
     return;
   }
   console.log(HELP);

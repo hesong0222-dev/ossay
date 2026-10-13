@@ -29,10 +29,13 @@ ossay · n8n-io/n8n
 GitHub shows `NOASSERTION` for licenses it cannot match, and many popular AI repos use custom or modified terms:
 source-available licenses, "Apache 2.0 with additional conditions", per-folder licenses, non-commercial clauses, or a visible repo with all rights reserved.
 
-In a first scan of 100 widely used and fast-rising AI repos, **9 needed a closer read before commercial use or hosting**:
-4 restrict commercial use or hosting, 3 add conditions or carve-outs to a permissive grant, 2 grant no open-source rights.
+In a first scan of 100 widely used and fast-rising AI repos, **11 needed a closer read before commercial use or hosting**:
+4 restrict commercial use or hosting, 5 add conditions or carve-outs to a permissive grant, 2 grant no open-source rights.
 9 more are GPL/AGPL (fine, but with obligations). The rest are permissive.
 Full table and the caveats: [`data/README.md`](data/README.md).
+
+Licenses also move: in the 12 months to 2026-10-13, **31 of 351 popular repos changed what their license file grants**
+(11 toward copyleft or added restrictions, 6 toward permissive). Every commit and the method: [`data/license-changes-2026-10.md`](data/license-changes-2026-10.md).
 
 ## Use
 
@@ -41,7 +44,12 @@ npx github:hesong0222-dev/ossay check owner/repo          # card in the terminal
 npx github:hesong0222-dev/ossay check owner/repo --md     # markdown card (paste into an issue or PR)
 npx github:hesong0222-dev/ossay check owner/repo --json   # machine readable
 npx github:hesong0222-dev/ossay scan repos.txt --out results.json --csv results.csv
+npx github:hesong0222-dev/ossay history owner/repo        # license-file commits in the last 12 months, before → after
+npx github:hesong0222-dev/ossay ledger repos.txt --since 2025-10-13 --out changes.json
 ```
+
+`history` lists every commit on the default branch that touched `LICENSE*`, `LICENCE*` or `COPYING*`, reads the file before and after,
+and labels the change: `class-change` (the reading changed), `wording`, `cosmetic` (only years / copyright lines), `added`, `removed`, `moved`.
 
 Or clone and run `node bin/ossay.mjs ...`. (An npm package is not published yet.)
 

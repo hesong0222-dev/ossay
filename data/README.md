@@ -19,8 +19,10 @@ No judgement about maintainers or intent.
 - `NO_RELEASES`, `VERY_YOUNG`, `LOW_FORK_RATIO` are notes, not accusations. Stars are not adoption.
 - Mixed and per-file licenses are the hard case. Several rows below were wrong in earlier versions of the classifier and were corrected after reading the full license text. If you find another, please open an issue.
 
+**Correction 2026-10-13:** open-webui/open-webui and ranxianglei/billion-context were read as plain BSD/MIT. Their license files add a clause on top of the permissive grant; the classifier now detects this (`test/license.test.mjs`). Tencent/WeKnora now reads as MIT (the project's own license, named first) instead of Apache-2.0 (a third-party notice further down). Only the license fields of these three rows changed; stars and dates are still the 2026-10-12 snapshot.
+
 ## Headline
-**9 of 100** repos need a closer read before commercial use or hosting:
+**11 of 100** repos need a closer read before commercial use or hosting:
 
 ### Restrict commercial use or hosting (4)
 | Repo | Stars | Reading |
@@ -30,12 +32,14 @@ No judgement about maintainers or intent.
 | datawhalechina/hello-agents | 82,724 | non-commercial terms — Text restricts commercial use. |
 | mksglu/context-mode | 26,902 | Elastic License — Providing it to third parties as a managed service is prohibited. |
 
-### Add conditions or carve-outs to a permissive grant (3)
+### Add conditions or carve-outs to a permissive grant (5)
 | Repo | Stars | Reading |
 |---|---:|---|
 | langgenius/dify | 158,238 | modified permissive — Permissive base with extra conditions (often multi-tenant hosting or branding). Read the added terms. |
 | lobehub/lobehub | 83,166 | modified permissive — Permissive base with extra conditions (often multi-tenant hosting or branding). Read the added terms. |
 | bilawalsidhu/gods-eye-view | 52,831 | modified-permissive — Likely carve-outs for third-party material; check which files they cover. |
+| open-webui/open-webui | 154,522 | modified permissive — BSD-3-Clause text plus a clause that overrides it (branding). |
+| ranxianglei/billion-context | 1,064 | modified permissive — MIT plus an added attribution term for product surfaces. |
 
 ### Grant no open-source rights (2)
 | Repo | Stars | Reading |
@@ -46,15 +50,15 @@ No judgement about maintainers or intent.
 ## All license classes
 | Class | Repos |
 |---|---:|
-| permissive | 82 |
+| permissive | 80 |
 | network-copyleft | 5 |
 | strong-copyleft | 4 |
-| modified-permissive | 3 |
+| modified-permissive | 5 |
 | source-available | 2 |
 | mixed | 1 |
 | proprietary | 1 |
 | non-commercial | 1 |
 | none | 1 |
 
-## Permissive-looking, but the text is not an exact match (7)
-GitHub's matcher could not match these files exactly (extra notices, multiple copyright holders, added terms). Usually benign, but read them: f/prompts.chat, open-webui/open-webui, rasbt/LLMs-from-scratch, pytorch/pytorch, chrislgarry/Apollo-11, Tencent/WeKnora, ranxianglei/billion-context.
+## Permissive-looking, but the text is not an exact match (5)
+GitHub's matcher could not match these files exactly (extra notices, multiple copyright holders, added terms). Usually benign, but read them: f/prompts.chat, rasbt/LLMs-from-scratch, pytorch/pytorch, chrislgarry/Apollo-11, Tencent/WeKnora.

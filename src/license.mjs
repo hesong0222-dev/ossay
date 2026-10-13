@@ -15,11 +15,12 @@ const TEXT_RULES = [
   [/PolyForm|Fair Source|Fair-code/i, 'PolyForm/Fair-code style', 'source-available', 'conditional', 'restricted', 'Source-available with usage limits; read the terms.'],
   [/Llama\s+\d*(\.\d+)?\s*Community License|LLAMA COMMUNITY LICENSE/i, 'Llama Community License', 'ai-model-license', 'conditional', 'conditional', 'Commercial use allowed with user-count threshold, attribution and acceptable-use terms.'],
   [/OpenRAIL|Responsible AI License|RAIL License/i, 'OpenRAIL-style', 'ai-model-license', 'conditional', 'conditional', 'Use-based restrictions are passed to downstream users.'],
-  [/(modified version of|based on) (the )?(Apache License|MIT License)[^\n]{0,40}(additional|following)/i, 'modified permissive', 'modified-permissive', 'conditional', 'conditional', 'Permissive base with extra conditions (often multi-tenant hosting or branding). Read the added terms.'],
-  [/non-?\s?commercial|not for commercial|research (purposes )?only|academic use only|research use only/i, 'non-commercial terms', 'non-commercial', 'no', 'no', 'Text restricts commercial use.'],
+  [/(modified version of|based on) (the )?(Apache License|MIT License)[^\n]{0,40}(additional|following)|(Apache License|MIT License).{0,200}subject to (the )?additional (conditions|terms)/i, 'modified permissive', 'modified-permissive', 'conditional', 'conditional', 'Permissive base with extra conditions (often multi-tenant hosting or branding). Read the added terms.'],
+  [/\bnon-?\s?commercial\b|not for commercial|research (purposes )?only|academic use only|research use only/i, 'non-commercial terms', 'non-commercial', 'no', 'no', 'Text restricts commercial use.'],
 ];
 const BASE_TEXT = [
-  [/Public Domain Mark|dedicated to the public domain|CC0 1\.0 Universal/i, 'PublicDomain'],
+  [/Public Domain Mark|dedicated to the public domain|unencumbered software released into the public domain|CC0 1\.0 Universal/i, 'PublicDomain'],
+  [/Attribution 4\.0 International/i, 'CC-BY-4.0'],
   [/GNU AFFERO GENERAL PUBLIC LICENSE/i, 'AGPL-3.0'],
   [/GNU LESSER GENERAL PUBLIC LICENSE/i, 'LGPL'],
   [/GNU GENERAL PUBLIC LICENSE/i, 'GPL'],
@@ -29,7 +30,7 @@ const BASE_TEXT = [
   [/Redistribution and use in source and binary forms/i, 'BSD'],
 ];
 
-const BASE_TO_SPDX = { PublicDomain: 'CC0-1.0', 'AGPL-3.0': 'AGPL-3.0', LGPL: 'LGPL-3.0', GPL: 'GPL-3.0', 'MPL-2.0': 'MPL-2.0', 'Apache-2.0': 'Apache-2.0', MIT: 'MIT', BSD: 'BSD-3-Clause' };
+const BASE_TO_SPDX = { PublicDomain: 'CC0-1.0', 'CC-BY-4.0': 'CC-BY-4.0', 'AGPL-3.0': 'AGPL-3.0', LGPL: 'LGPL-3.0', GPL: 'GPL-3.0', 'MPL-2.0': 'MPL-2.0', 'Apache-2.0': 'Apache-2.0', MIT: 'MIT', BSD: 'BSD-3-Clause' };
 
 export function classify(spdx, text = '') {
   const out = { spdx: spdx && spdx !== 'NOASSERTION' ? spdx : null, class: 'unknown', commercial_use: 'unknown', hosting_as_service: 'unknown', evidence: [], confidence: 'low' };
@@ -55,18 +56,32 @@ export function classify(spdx, text = '') {
     return out;
   }
 
+  // Match across line breaks: "Business\nSource License" is the same phrase.
+  text = text.replace(/\s+/g, ' ');
+  // Standard phrases that mention non-commercial use without restricting it (Unlicense, GPL section 3/6).
+  const ncText = text.replace(/commercial (or|and) non-?commercial|only for noncommercial distribution|occasionally and noncommercially/gi, '');
   // Different licenses for different folders (e.g. MIT outside /platform, PolyForm inside it).
   const mixedByFolder = /\b(folder|director(y|ies))\b/i.test(text)
-    && /MIT License|Apache License/i.test(text)
+    && /MIT License|Apache License|GNU (Affero |Lesser )?General Public License/i.test(text)
     && /Polyform|Elastic License|Business Source License|Sustainable Use|Commons Clause|Functional Source/i.test(text);
   if (mixedByFolder) {
     out.confidence = 'medium';
     return set(out, 'mixed', 'conditional', 'conditional', 'License file assigns different licenses to different folders.', 'Part of the repo is permissive, part is source-available. Check which folder you depend on.');
   }
+  // A permissive grant plus clauses that override it (e.g. a branding clause, an extra attribution term).
+  if (/Permission is hereby granted, free of charge|Redistribution and use in source and binary forms/i.test(text)
+    && /Notwithstanding any other provision of this License|Additional Terms? —|Additional Terms?:/.test(text)) {
+    out.confidence = 'medium';
+    out.label = 'modified permissive';
+    return set(out, 'modified-permissive', 'conditional', 'conditional', 'Permissive grant with an added clause that overrides part of it.', 'Read the added clause (often branding or attribution on product surfaces).');
+  }
   // A permissive grant with carve-outs (e.g. third-party data under NC terms) is not a non-commercial license.
   const hasPermissiveGrant = /Permission is hereby granted, free of charge|Apache License\s+Version 2\.0|Redistribution and use in source and binary forms/i.test(text);
+  const hasCopyleftGrant = /GNU (AFFERO |LESSER )?GENERAL PUBLIC LICENSE|Mozilla Public License/i.test(text);
   for (const [re, label, cls, com, host, note] of TEXT_RULES) {
-    if (re.test(text)) {
+    if (re.test(label === 'non-commercial terms' ? ncText : text)) {
+      // A copyleft license with notes about third-party non-commercial material: read the copyleft license below.
+      if (label === 'non-commercial terms' && hasCopyleftGrant && !hasPermissiveGrant) break;
       if (cls === 'non-commercial' && label === 'non-commercial terms' && hasPermissiveGrant) {
         out.confidence = 'medium';
         return set(out, 'modified-permissive', 'conditional', 'conditional', 'Permissive grant, but the text also contains non-commercial terms.', 'Likely carve-outs for third-party material; check which files they cover.');
@@ -76,16 +91,17 @@ export function classify(spdx, text = '') {
       return set(out, cls, com, host, `License text matches "${label}"`, note);
     }
   }
-  for (const [re, label] of BASE_TEXT) {
-    if (re.test(text)) {
-      const r = classify(BASE_TO_SPDX[label], '');
-      r.spdx = null;
-      r.label = label;
-      r.resembles = true;
-      r.confidence = 'medium';
-      r.evidence = [`GitHub reported NOASSERTION, but the text resembles ${label}. Check for added terms (exceptions, extra restrictions).`];
-      return r;
-    }
+  // The license named first is the project's own; later ones are usually third-party notices.
+  const base = BASE_TEXT.map(([re, label]) => [text.search(re), label]).filter(([i]) => i >= 0).sort((a, b) => a[0] - b[0]);
+  if (base.length) {
+    const label = base[0][1];
+    const r = classify(BASE_TO_SPDX[label], '');
+    r.spdx = null;
+    r.label = label;
+    r.resembles = true;
+    r.confidence = 'medium';
+    r.evidence = [`GitHub reported NOASSERTION, but the text resembles ${label}. Check for added terms (exceptions, extra restrictions).`];
+    return r;
   }
   if (/all rights reserved/i.test(text) && !/permission is hereby granted|redistribution and use|you may (use|copy|modify|distribute)|licensed under/i.test(text)) {
     out.confidence = 'medium';
