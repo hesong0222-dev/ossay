@@ -87,6 +87,8 @@ Or clone and run `node bin/ossay.mjs ...`. (An npm package is not published yet.
 
 Needs Node 18+. Auth uses `GITHUB_TOKEN` / `GH_TOKEN`, or your `gh` login if present (60 requests/hour without a token).
 
+**Used by** [ossay-guard](https://github.com/hesong0222-dev/ossay-guard), a Claude Code plugin that runs `ossay deps` on the packages your agent is about to install and asks you first when the license is restricted.
+
 ## What it reads
 
 | Signal | Source |
