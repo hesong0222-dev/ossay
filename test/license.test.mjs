@@ -101,3 +101,9 @@ test('BSD text with a "Notwithstanding any other provision" branding clause is m
   const r = classify(null, 'Redistribution and use in source and binary forms, with or without modification, are permitted ... 4. Notwithstanding any other provision of this License, licensees are strictly prohibited from altering or removing any branding.');
   assert.equal(r.class, 'modified-permissive');
 });
+
+test('short Apache header, MIT-CMU text and a dual-license pointer file are permissive (ftfy, Pillow, pyca)', () => {
+  assert.equal(classify(null, 'Copyright 2023 Robyn Speer\n\nLicensed under the Apache License, Version 2.0 (the "License");').class, 'permissive');
+  assert.equal(classify(null, 'Pillow is licensed under the open source MIT-CMU License:\n\nPermission to use, copy, modify and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted').label, 'MIT-CMU');
+  assert.equal(classify(null, 'This software is made available under the terms of *either* of the licenses\nfound in LICENSE.APACHE or LICENSE.BSD.').class, 'permissive');
+});

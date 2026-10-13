@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 import { readFileSync, writeFileSync } from 'node:fs';
-import { parseRepo, fetchRepo } from '../src/github.mjs';
+import { parseRepo, fetchRepo, folderLicense, rootLicenseTexts } from '../src/github.mjs';
 import { classify } from '../src/license.mjs';
 import { buildFlags } from '../src/flags.mjs';
 import { buildCard, renderText, renderMarkdown } from '../src/card.mjs';
 import { history, renderHistory } from '../src/history.mjs';
+import { readManifests, resolve, depResult, licenseMismatch, summarize, renderDeps, renderDepsMarkdown } from '../src/deps.mjs';
 
 const HELP = `ossay — assay an open-source repo before you adopt it
 
@@ -13,14 +14,18 @@ Usage:
   ossay scan <file> [--out results.json] [--csv results.csv]   (file: one repo per line, or a JSON array of "owner/repo")
   ossay history <owner/repo> [--since YYYY-MM-DD] [--json]   (commits that touched LICENSE/COPYING on the default branch; default: last 12 months)
   ossay ledger <file> [--since YYYY-MM-DD] [--out changes.json]   (history for every repo in the file)
+  ossay deps [path] [--json | --md] [--fail-on risk]   (direct deps in package.json, requirements.txt, pyproject.toml, go.mod)
 
 Auth: uses GITHUB_TOKEN / GH_TOKEN, or \`gh auth token\` if available (60 req/h without).
 Heuristic output from public GitHub data. Not legal advice.`;
 
-export async function check(input) {
+// dir: a monorepo subfolder whose own license file, when present, replaces the root one.
+export async function check(input, dir) {
   const full = parseRepo(input);
   const data = await fetchRepo(full);
-  const lic = classify(data.repo.license ? data.repo.license.spdx_id : null, data.licenseText);
+  const sub = dir ? await folderLicense(full, dir) : null;
+  const lic = sub ? classify(null, sub.text) : classify(data.repo.license ? data.repo.license.spdx_id : null, data.licenseText);
+  if (sub) lic.evidence.unshift(`Read ${sub.path} (package folder), not the repo root.`);
   const flags = buildFlags({ repo: data.repo, lic, latestRelease: data.latestRelease });
   return buildCard({ repo: data.repo, lic, flags, latestRelease: data.latestRelease });
 }
@@ -62,6 +67,35 @@ async function main() {
       writeFileSync(csvPath, [head, ...rows].map((r) => r.map(csvEscape).join(',')).join('\n') + '\n');
     }
     console.log(`scanned ${out.filter((c) => !c.error).length}/${list.length} → ${jsonPath}${csvPath ? ` , ${csvPath}` : ''}`);
+    return;
+  }
+  if (cmd === 'deps') {
+    const dir = arg && !arg.startsWith('--') ? arg : '.';
+    const flagsArg = arg && arg.startsWith('--') ? [arg, ...rest] : rest;
+    const { manifests, deps } = readManifests(dir);
+    const cards = new Map();
+    const results = [];
+    await pool(deps, 2, async (d) => {
+      let res;
+      try { res = await resolve(d); } catch (e) { res = { repo: null, registry_license: null, reason: e.message }; }
+      let card = null;
+      if (res.repo) {
+        const k = `${res.repo}/${res.directory || ''}`;
+        if (!cards.has(k)) cards.set(k, check(res.repo, res.directory).catch((e) => ({ error: e.message })));
+        card = await cards.get(k);
+      }
+      // Before reporting a mismatch, read the repo's other root license files (dual licensing).
+      let others = [];
+      if (card && !card.error && !res.directory && licenseMismatch(res.registry_license, card.license.class)?.level === 'risk') {
+        others = (await rootLicenseTexts(res.repo).catch(() => [])).map((t) => classify(null, t).class);
+      }
+      results.push(depResult(d, res, card, others));
+    });
+    results.sort((a, b) => a.name.localeCompare(b.name));
+    const out = { path: dir, manifests, summary: summarize(results), deps: results };
+    console.log(flagsArg.includes('--json') ? JSON.stringify(out, null, 2) : flagsArg.includes('--md') ? renderDepsMarkdown(out) : renderDeps(out));
+    const i = flagsArg.indexOf('--fail-on');
+    if (i >= 0 && flagsArg[i + 1] === 'risk' && out.summary.risk) process.exitCode = 1;
     return;
   }
   const since = opt('--since') || new Date(Date.now() - 365 * 86400000).toISOString().slice(0, 10);

@@ -32,6 +32,22 @@ export function parseRepo(input) {
   return `${m[1]}/${m[2]}`;
 }
 
+// The license file in a monorepo subfolder (e.g. packages/foo/LICENSE), or null.
+export async function folderLicense(full, dir) {
+  const list = await api(`/repos/${full}/contents/${dir.split('/').map(encodeURIComponent).join('/')}`);
+  const f = Array.isArray(list) ? list.find((x) => x.type === 'file' && /^(licen[sc]e|copying)/i.test(x.name)) : null;
+  const file = f && await api(`/repos/${full}/contents/${f.path.split('/').map(encodeURIComponent).join('/')}`);
+  return file && file.content ? { path: f.path, text: Buffer.from(file.content, 'base64').toString('utf8') } : null;
+}
+
+// Every license-like file in the repo root except third-party notices (e.g. MIT-LICENSE.txt next to GPL-LICENSE.txt).
+export async function rootLicenseTexts(full) {
+  const root = await api(`/repos/${full}/contents`);
+  const names = Array.isArray(root) ? root.filter((x) => x.type === 'file' && /licen[sc]e|copying/i.test(x.name) && !/third|notice|vendor|bundled|binary|gems/i.test(x.name)).map((x) => x.name) : [];
+  const files = await Promise.all(names.map((n) => api(`/repos/${full}/contents/${encodeURIComponent(n)}`)));
+  return files.filter((f) => f && f.content).map((f) => Buffer.from(f.content, 'base64').toString('utf8'));
+}
+
 export async function fetchRepo(full) {
   const repo = await api(`/repos/${full}`);
   if (!repo) throw new Error(`Repo not found: ${full}`);

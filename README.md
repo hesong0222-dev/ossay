@@ -46,10 +46,37 @@ npx github:hesong0222-dev/ossay check owner/repo --json   # machine readable
 npx github:hesong0222-dev/ossay scan repos.txt --out results.json --csv results.csv
 npx github:hesong0222-dev/ossay history owner/repo        # license-file commits in the last 12 months, before → after
 npx github:hesong0222-dev/ossay ledger repos.txt --since 2025-10-13 --out changes.json
+npx github:hesong0222-dev/ossay deps [path] [--json | --md] [--fail-on risk]   # direct dependencies of a project
 ```
 
 `history` lists every commit on the default branch that touched `LICENSE*`, `LICENCE*` or `COPYING*`, reads the file before and after,
 and labels the change: `class-change` (the reading changed), `wording`, `cosmetic` (only years / copyright lines), `added`, `removed`, `moved`.
+
+`deps` reads the **direct** dependencies in `package.json` (dependencies and devDependencies), `requirements.txt`, `pyproject.toml` (`[project].dependencies`) and `go.mod` (`require`, without `// indirect`).
+It finds each GitHub repo from the registry (npm `repository`, PyPI `project_urls`, Go module paths on `github.com`; anything else stays `unresolved`, never guessed),
+runs the same card, and compares the **registry's license field with the repo's license file**: `REGISTRY_LICENSE_MISMATCH` is a risk when the file is more restrictive than what npm/PyPI says.
+For monorepo packages it reads the package folder's own license file. `--md` prints a table for a PR; `--fail-on risk` exits 1 when any dependency is a risk (for CI).
+
+Run on three popular apps on 2026-10-13 (manifests at the default branch):
+
+```text
+$ ossay deps open-webui        # open-webui/open-webui pyproject.toml
+ossay deps · open-webui  (pyproject.toml; 90 direct dependencies)
+  risk 6 · note 20 · ok 59 · unresolved 5
+
+  Maintenance
+  ⚠ docx2txt                     ankushshah89/python-docx2txt     STALE
+  ⚠ fake-useragent               fake-useragent/fake-useragent    ARCHIVED
+  ...
+  Notes
+  · starlette-compress: no license file in Zaczero/pkgs; "0BSD" is declared only in registry metadata
+
+  Unresolved (not checked): beautifulsoup4, openpyxl, pydub, python-socketio, xlrd
+```
+
+- `louislam/uptime-kuma` package.json, 155 deps: risk 29 (all archived/stale) · note 47 · ok 77 · unresolved 2. Four repos ship no license file (the license is only in npm metadata); `favico.js` has MIT and GPL files side by side (dual licensed).
+- `gohugoio/hugo` go.mod, 80 deps: risk 14 (archived/stale) · ok 46 · unresolved 10 (`golang.org/x/*` and other non-GitHub module paths). Go has no registry license field, so no mismatch check.
+- No registry-vs-repo license conflict in these three; every flagged license was read by hand. Full results: [`data/deps-2026-10/`](data/deps-2026-10/).
 
 Or clone and run `node bin/ossay.mjs ...`. (An npm package is not published yet.)
 
@@ -68,13 +95,17 @@ License classes: `permissive`, `weak-copyleft`, `strong-copyleft`, `network-copy
 ## Limits (read this)
 
 - **Heuristic, not legal advice.** Confidence is printed per result. `custom` and `low` mean: read the license yourself.
-- Looks at the default branch's license file only. Dependencies and CLA terms are out of scope in v0. Per-folder licenses are detected only when one license file says so.
+- Looks at the default branch's license file only (a dependency's pinned version may be older). `deps` covers direct dependencies only: transitive dependencies (lockfiles) and CLA terms are out of scope in v0. The registry license is the latest published version's. Per-folder licenses are detected only when one license file says so.
 - Pattern list covers the common source-available and model licenses; new licenses will show up as `custom`. Add a case and a test in [`test/`](test/license.test.mjs).
 - A snapshot of public data. Licenses change; re-run.
 
-## Roadmap (not built yet)
+## Roadmap
 
-- Dependency-tree scan (`package.json`, `requirements.txt`) for the same card per dependency.
+Built: direct-dependency scan (`ossay deps`: npm, PyPI, Go) with a registry-vs-repo license check.
+
+Not built yet:
+
+- Transitive dependencies (lockfiles: `package-lock.json`, `poetry.lock`, `go.sum`).
 - A GitHub Action that comments the card on PRs that add a new dependency.
 - Reproducible token-cost measurement for agent plugins, published as open data.
 

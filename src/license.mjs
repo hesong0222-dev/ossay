@@ -1,6 +1,6 @@
 // Heuristic license classification. Not legal advice. Evidence strings say what matched.
 
-const PERMISSIVE = new Set(['MIT', 'MIT-0', 'Apache-2.0', 'BSD-2-Clause', 'BSD-3-Clause', 'ISC', 'Unlicense', '0BSD', 'CC0-1.0', 'Zlib', 'BSL-1.0', 'WTFPL', 'CC-BY-4.0']);
+const PERMISSIVE = new Set(['MIT', 'MIT-0', 'Apache-2.0', 'BSD-2-Clause', 'BSD-3-Clause', 'ISC', 'Unlicense', '0BSD', 'CC0-1.0', 'Zlib', 'BSL-1.0', 'WTFPL', 'CC-BY-4.0', 'MIT-CMU']);
 const WEAK = /^(MPL-2\.0|EPL-|CDDL-|LGPL-)/;
 
 // Ordered: most specific first. Each rule: [regex on license text, label, class, commercial, hosting, note]
@@ -25,12 +25,14 @@ const BASE_TEXT = [
   [/GNU LESSER GENERAL PUBLIC LICENSE/i, 'LGPL'],
   [/GNU GENERAL PUBLIC LICENSE/i, 'GPL'],
   [/Mozilla Public License/i, 'MPL-2.0'],
-  [/Apache License\s+Version 2\.0/i, 'Apache-2.0'],
+  [/Apache License\s+Version 2\.0|Licensed under the Apache License,? Version 2\.0/i, 'Apache-2.0'],
   [/Permission is hereby granted, free of charge/i, 'MIT'],
   [/Redistribution and use in source and binary forms/i, 'BSD'],
+  // MIT-CMU / HPND (Pillow): "Permission to use, copy, modify and distribute this software ... without fee is hereby granted".
+  [/Permission to use, copy, modify,? and(\/or)? distribute this software and its documentation for any purpose and without fee is hereby granted/i, 'MIT-CMU'],
 ];
 
-const BASE_TO_SPDX = { PublicDomain: 'CC0-1.0', 'CC-BY-4.0': 'CC-BY-4.0', 'AGPL-3.0': 'AGPL-3.0', LGPL: 'LGPL-3.0', GPL: 'GPL-3.0', 'MPL-2.0': 'MPL-2.0', 'Apache-2.0': 'Apache-2.0', MIT: 'MIT', BSD: 'BSD-3-Clause' };
+const BASE_TO_SPDX = { PublicDomain: 'CC0-1.0', 'CC-BY-4.0': 'CC-BY-4.0', 'AGPL-3.0': 'AGPL-3.0', LGPL: 'LGPL-3.0', GPL: 'GPL-3.0', 'MPL-2.0': 'MPL-2.0', 'Apache-2.0': 'Apache-2.0', MIT: 'MIT', BSD: 'BSD-3-Clause', 'MIT-CMU': 'MIT-CMU' };
 
 export function classify(spdx, text = '') {
   const out = { spdx: spdx && spdx !== 'NOASSERTION' ? spdx : null, class: 'unknown', commercial_use: 'unknown', hosting_as_service: 'unknown', evidence: [], confidence: 'low' };
@@ -90,6 +92,13 @@ export function classify(spdx, text = '') {
       out.label = label;
       return set(out, cls, com, host, `License text matches "${label}"`, note);
     }
+  }
+  // A pointer file that offers a choice of permissive license files (pyca: "either of the licenses found in LICENSE.APACHE or LICENSE.BSD").
+  const pointer = text.match(/either\*? of the licen[sc]es found in (LICEN[SC]E[.-](?:APACHE|MIT|BSD)) or (LICEN[SC]E[.-](?:APACHE|MIT|BSD))/i);
+  if (pointer && text.length < 600) {
+    out.confidence = 'medium';
+    out.label = 'dual permissive (files)';
+    return set(out, 'permissive', 'yes', 'yes', `License file points to ${pointer[1]} or ${pointer[2]}, at your choice.`);
   }
   // The license named first is the project's own; later ones are usually third-party notices.
   const base = BASE_TEXT.map(([re, label]) => [text.search(re), label]).filter(([i]) => i >= 0).sort((a, b) => a[0] - b[0]);

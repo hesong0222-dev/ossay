@@ -1,0 +1,2844 @@
+{
+ "path": "louislam/uptime-kuma",
+ "manifests": [
+  "package.json"
+ ],
+ "summary": {
+  "risk": 29,
+  "note": 47,
+  "ok": 77,
+  "unresolved": 2,
+  "error": 0
+ },
+ "deps": [
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "@actions/github",
+   "spec": "~9.1.1",
+   "repo": "actions/toolkit",
+   "registry_license": "MIT",
+   "directory": "packages/github",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    },
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "@better-auth/api-key",
+   "spec": "1.6.11",
+   "repo": "better-auth/better-auth",
+   "registry_license": "MIT",
+   "directory": "packages/api-key",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "@fortawesome/fontawesome-svg-core",
+   "spec": "~1.2.36",
+   "repo": "FortAwesome/Font-Awesome",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "CC-BY-4.0"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "@fortawesome/free-regular-svg-icons",
+   "spec": "~5.15.4",
+   "repo": "FortAwesome/Font-Awesome",
+   "registry_license": "(CC-BY-4.0 AND MIT)",
+   "repo_license": {
+    "class": "permissive",
+    "label": "CC-BY-4.0"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "@fortawesome/free-solid-svg-icons",
+   "spec": "~5.15.4",
+   "repo": "FortAwesome/Font-Awesome",
+   "registry_license": "(CC-BY-4.0 AND MIT)",
+   "repo_license": {
+    "class": "permissive",
+    "label": "CC-BY-4.0"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "@fortawesome/vue-fontawesome",
+   "spec": "~3.1.3",
+   "repo": "FortAwesome/vue-fontawesome",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "@grpc/grpc-js",
+   "spec": "~1.8.22",
+   "repo": "grpc/grpc-node",
+   "registry_license": "Apache-2.0",
+   "repo_license": {
+    "class": "permissive",
+    "label": "Apache-2.0"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "@inquirer/core",
+   "spec": "~11.2.1",
+   "repo": "SBoudrias/Inquirer.js",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "@inquirer/prompts",
+   "spec": "~8.5.2",
+   "repo": "SBoudrias/Inquirer.js",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "@louislam/ping",
+   "spec": "~0.4.4-mod.1",
+   "repo": "louislam/node-ping",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "STALE",
+     "level": "risk"
+    },
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "risk"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "@playwright/test",
+   "spec": "~1.61.1",
+   "repo": "microsoft/playwright",
+   "registry_license": "Apache-2.0",
+   "repo_license": {
+    "class": "permissive",
+    "label": "Apache-2.0"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "@popperjs/core",
+   "spec": "~2.10.2",
+   "repo": "popperjs/popper-core",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "@testcontainers/hivemq",
+   "spec": "10.28.0",
+   "repo": "testcontainers/testcontainers-node",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "@testcontainers/mariadb",
+   "spec": "10.28.0",
+   "repo": "testcontainers/testcontainers-node",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "@testcontainers/mssqlserver",
+   "spec": "10.28.0",
+   "repo": "testcontainers/testcontainers-node",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "@testcontainers/mysql",
+   "spec": "11.14.0",
+   "repo": "testcontainers/testcontainers-node",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "@testcontainers/oraclefree",
+   "spec": "11.14.0",
+   "repo": "testcontainers/testcontainers-node",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "@testcontainers/postgresql",
+   "spec": "11.14.0",
+   "repo": "testcontainers/testcontainers-node",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "@testcontainers/rabbitmq",
+   "spec": "10.28.0",
+   "repo": "testcontainers/testcontainers-node",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "@types/better-sqlite3",
+   "spec": "~7.6.13",
+   "repo": "DefinitelyTyped/DefinitelyTyped",
+   "registry_license": "MIT",
+   "directory": "types/better-sqlite3",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "@types/bootstrap",
+   "spec": "~5.1.13",
+   "repo": "DefinitelyTyped/DefinitelyTyped",
+   "registry_license": "MIT",
+   "directory": "types/bootstrap",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "@types/node",
+   "spec": "^26.1.1",
+   "repo": "DefinitelyTyped/DefinitelyTyped",
+   "registry_license": "MIT",
+   "directory": "types/node",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "@types/web-push",
+   "spec": "^3.6.4",
+   "repo": "DefinitelyTyped/DefinitelyTyped",
+   "registry_license": "MIT",
+   "directory": "types/web-push",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "@typescript-eslint/eslint-plugin",
+   "spec": "^6.21.0",
+   "repo": "typescript-eslint/typescript-eslint",
+   "registry_license": "MIT",
+   "directory": "packages/eslint-plugin",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "@typescript-eslint/parser",
+   "spec": "^6.21.0",
+   "repo": "typescript-eslint/typescript-eslint",
+   "registry_license": "MIT",
+   "directory": "packages/parser",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "@vitejs/plugin-vue",
+   "spec": "~6.0.7",
+   "repo": "vitejs/vite-plugin-vue",
+   "registry_license": "MIT",
+   "directory": "packages/plugin-vue",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "@vue/compiler-sfc",
+   "spec": "~3.5.39",
+   "repo": "vuejs/core",
+   "registry_license": "MIT",
+   "directory": "packages/compiler-sfc",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "@vuepic/vue-datepicker",
+   "spec": "~3.4.8",
+   "repo": "Vuepic/vue-datepicker",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "@vvo/tzdb",
+   "spec": "~6.198.0",
+   "repo": "vvo/tzdb",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "aedes",
+   "spec": "~1.0.0",
+   "repo": "moscajs/aedes",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "args-parser",
+   "spec": "~1.3.0",
+   "repo": "eveningkid/args-parser",
+   "registry_license": "Apache-2.0",
+   "repo_license": {
+    "class": "permissive",
+    "label": "Apache-2.0"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "STALE",
+     "level": "risk"
+    }
+   ],
+   "status": "risk"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "axios",
+   "spec": "~0.33.0",
+   "repo": "axios/axios",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "badge-maker",
+   "spec": "~3.3.1",
+   "repo": "badges/shields",
+   "registry_license": "(MIT OR Apache-2.0)",
+   "directory": "badge-maker",
+   "repo_license": {
+    "class": "permissive",
+    "label": "Apache-2.0"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    },
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "bcryptjs",
+   "spec": "~2.4.3",
+   "repo": "dcodeIO/bcrypt.js",
+   "registry_license": "BSD-3-Clause",
+   "repo_license": {
+    "class": "permissive",
+    "label": "BSD"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "better-auth",
+   "spec": "~1.6.11",
+   "repo": "better-auth/better-auth",
+   "registry_license": "MIT",
+   "directory": "packages/better-auth",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "better-sqlite3",
+   "spec": "~12.11.1",
+   "repo": "WiseLibs/better-sqlite3",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "bootstrap",
+   "spec": "5.1.3",
+   "repo": "twbs/bootstrap",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "chardet",
+   "spec": "~1.4.0",
+   "repo": "runk/node-chardet",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "chart.js",
+   "spec": "~4.2.1",
+   "repo": "chartjs/Chart.js",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "chartjs-adapter-dayjs-4",
+   "spec": "~1.0.4",
+   "repo": "bolstycjw/chartjs-adapter-dayjs-4",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "none",
+    "label": null
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_ONLY_IN_REGISTRY",
+     "level": "note"
+    },
+    {
+     "id": "STALE",
+     "level": "risk"
+    },
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "risk"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "cheerio",
+   "spec": "~1.0.0",
+   "repo": "cheeriojs/cheerio",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "chroma-js",
+   "spec": "~2.4.2",
+   "repo": "gka/chroma.js",
+   "registry_license": "(BSD-3-Clause AND Apache-2.0)",
+   "repo_license": {
+    "class": "permissive",
+    "label": "BSD"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "command-exists",
+   "spec": "~1.2.9",
+   "repo": "mathisonian/command-exists",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "STALE",
+     "level": "risk"
+    },
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "risk"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "compare-versions",
+   "spec": "~3.6.0",
+   "repo": "omichelsen/compare-versions",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "STALE",
+     "level": "risk"
+    },
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "risk"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "concurrently",
+   "spec": "^7.6.0",
+   "repo": "open-cli-tools/concurrently",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "country-flag-emoji-polyfill",
+   "spec": "~0.1.8",
+   "repo": "talkjs/country-flag-emoji-polyfill",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    },
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "croner",
+   "spec": "~8.1.2",
+   "repo": "hexagon/croner",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LOW_FORK_RATIO",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "cronstrue",
+   "spec": "~2.24.0",
+   "repo": "bradymholt/cRonstrue",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "cross-env",
+   "spec": "~7.0.3",
+   "repo": "kentcdodds/cross-env",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "ARCHIVED",
+     "level": "risk"
+    }
+   ],
+   "status": "risk"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "dayjs",
+   "spec": "~1.11.19",
+   "repo": "iamkun/dayjs",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "dev-null",
+   "spec": "~0.1.1",
+   "repo": "thlorenz/dev-null",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "STALE",
+     "level": "risk"
+    },
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "risk"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "dns2",
+   "spec": "~2.0.5",
+   "repo": "lsongdev/node-dns",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "dompurify",
+   "spec": "~3.4.0",
+   "repo": "cure53/DOMPurify",
+   "registry_license": "(MPL-2.0 OR Apache-2.0)",
+   "repo_license": {
+    "class": "permissive",
+    "label": "Apache-2.0"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "eslint",
+   "spec": "~8.14.0",
+   "repo": "eslint/eslint",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "eslint-config-prettier",
+   "spec": "^10.1.8",
+   "repo": "prettier/eslint-config-prettier",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "eslint-plugin-jsdoc",
+   "spec": "~46.4.6",
+   "repo": "gajus/eslint-plugin-jsdoc",
+   "registry_license": "BSD-3-Clause",
+   "repo_license": {
+    "class": "permissive",
+    "label": "BSD"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "eslint-plugin-vue",
+   "spec": "~8.7.1",
+   "repo": "vuejs/eslint-plugin-vue",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "eslint-plugin-vue-scoped-css",
+   "spec": "~2.7.2",
+   "repo": "future-architect/eslint-plugin-vue-scoped-css",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "express",
+   "spec": "~4.22.1",
+   "repo": "expressjs/express",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "express-basic-auth",
+   "spec": "~1.2.1",
+   "repo": "LionC/express-basic-auth",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "none",
+    "label": null
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_ONLY_IN_REGISTRY",
+     "level": "note"
+    },
+    {
+     "id": "STALE",
+     "level": "risk"
+    }
+   ],
+   "status": "risk"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "express-static-gzip",
+   "spec": "~2.1.8",
+   "repo": "tkoenig89/express-static-gzip",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "favico.js",
+   "spec": "~0.3.10",
+   "repo": "ejci/favico.js",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "strong-copyleft",
+    "label": "GPL-2.0"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "SEVERAL_LICENSE_FILES",
+     "level": "note"
+    },
+    {
+     "id": "STALE",
+     "level": "risk"
+    },
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "risk"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "feed",
+   "spec": "~4.2.2",
+   "repo": "jpmonette/feed",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "form-data",
+   "spec": "~4.0.5",
+   "repo": "form-data/form-data",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "gamedig",
+   "spec": "~5.3.2",
+   "repo": "gamedig/node-gamedig",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "globalping",
+   "spec": "~0.2.0",
+   "repo": "jsdelivr/globalping-typescript",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "html-escaper",
+   "spec": "~3.0.3",
+   "repo": "WebReflection/html-escaper",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "STALE",
+     "level": "risk"
+    },
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "risk"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "http-cookie-agent",
+   "spec": "~5.0.4",
+   "repo": "3846masa/http-cookie-agent",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "http-graceful-shutdown",
+   "spec": "~3.1.15",
+   "repo": "sebhildebrandt/http-graceful-shutdown",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "http-proxy-agent",
+   "spec": "~7.0.2",
+   "repo": "TooTallNate/proxy-agents",
+   "registry_license": "MIT",
+   "directory": "packages/http-proxy-agent",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "https-proxy-agent",
+   "spec": "~7.0.6",
+   "repo": "TooTallNate/proxy-agents",
+   "registry_license": "MIT",
+   "directory": "packages/https-proxy-agent",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "iconv-lite",
+   "spec": "~0.6.3",
+   "repo": "pillarjs/iconv-lite",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "is-url",
+   "spec": "~1.2.4",
+   "repo": "segmentio/is-url",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "isomorphic-ws",
+   "spec": "~5.0.0",
+   "repo": "heineiuo/isomorphic-ws",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "STALE",
+     "level": "risk"
+    }
+   ],
+   "status": "risk"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "jsesc",
+   "spec": "~3.0.2",
+   "repo": "mathiasbynens/jsesc",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "STALE",
+     "level": "risk"
+    },
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "risk"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "jsonata",
+   "spec": "~2.2.2",
+   "repo": "jsonata-js/jsonata",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "kafkajs",
+   "spec": "~2.2.4",
+   "repo": "tulios/kafkajs",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "STALE",
+     "level": "risk"
+    }
+   ],
+   "status": "risk"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "knex",
+   "spec": "~3.3.0",
+   "repo": "knex/knex",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "limiter",
+   "spec": "~2.1.0",
+   "repo": "jhurliman/node-rate-limiter",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "liquidjs",
+   "spec": "~10.29.0",
+   "repo": "harttle/liquidjs",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "marked",
+   "spec": "~14.1.4",
+   "repo": "markedjs/marked",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "mitt",
+   "spec": "~3.0.1",
+   "repo": "developit/mitt",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "STALE",
+     "level": "risk"
+    }
+   ],
+   "status": "risk"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "mongodb",
+   "spec": "~4.17.2",
+   "repo": "mongodb/node-mongodb-native",
+   "registry_license": "Apache-2.0",
+   "repo_license": {
+    "class": "permissive",
+    "label": "Apache-2.0"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "mqtt",
+   "spec": "~4.3.8",
+   "repo": "mqttjs/MQTT.js",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "mssql",
+   "spec": "~12.0.0",
+   "repo": "tediousjs/node-mssql",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "mysql2",
+   "spec": "~3.24.2",
+   "repo": "sidorares/node-mysql2",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "nanoid",
+   "spec": "~3.3.11",
+   "repo": "ai/nanoid",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "net-snmp",
+   "spec": "~3.26.1",
+   "repo": "markabrahams/node-net-snmp",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "none",
+    "label": null
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_ONLY_IN_REGISTRY",
+     "level": "note"
+    },
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "node-cloudflared-tunnel",
+   "spec": "~1.0.10",
+   "repo": null,
+   "registry_license": "MIT",
+   "status": "unresolved",
+   "reason": "no GitHub repo in registry metadata"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "node-radius-utils",
+   "spec": "~1.2.0",
+   "repo": "w3cj/node-radius-utils",
+   "registry_license": "MIT",
+   "status": "unresolved",
+   "reason": "Repo not found: w3cj/node-radius-utils"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "node-ssh",
+   "spec": "~13.1.0",
+   "repo": "steelbrain/node-ssh",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "nodemailer",
+   "spec": "~10.0.0",
+   "repo": "nodemailer/nodemailer",
+   "registry_license": "MIT-0",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "nostr-tools",
+   "spec": "~2.20.0",
+   "repo": "nbd-wtf/nostr-tools",
+   "registry_license": "Unlicense",
+   "repo_license": {
+    "class": "permissive",
+    "label": "Unlicense"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "openid-client",
+   "spec": "~5.7.1",
+   "repo": "panva/openid-client",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "oracledb",
+   "spec": "~6.10.0",
+   "repo": "oracle/node-oracledb",
+   "registry_license": "(Apache-2.0 OR UPL-1.0)",
+   "repo_license": {
+    "class": "permissive",
+    "label": "Apache-2.0"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "password-hash",
+   "spec": "~1.2.2",
+   "repo": "davidwood/node-password-hash",
+   "registry_license": null,
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "STALE",
+     "level": "risk"
+    },
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "risk"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "pg",
+   "spec": "~8.11.6",
+   "repo": "brianc/node-postgres",
+   "registry_license": "MIT",
+   "directory": "packages/pg",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "pg-connection-string",
+   "spec": "~2.6.4",
+   "repo": "brianc/node-postgres",
+   "registry_license": "MIT",
+   "directory": "packages/pg-connection-string",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    },
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "playwright-core",
+   "spec": "~1.61.1",
+   "repo": "microsoft/playwright",
+   "registry_license": "Apache-2.0",
+   "repo_license": {
+    "class": "permissive",
+    "label": "Apache-2.0"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "postcss-html",
+   "spec": "~1.8.1",
+   "repo": "ota-meshi/postcss-html",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "postcss-rtlcss",
+   "spec": "~5.7.1",
+   "repo": "elchininet/postcss-rtlcss",
+   "registry_license": "Apache-2.0",
+   "repo_license": {
+    "class": "permissive",
+    "label": "Apache-2.0"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "postcss-scss",
+   "spec": "~4.0.9",
+   "repo": "postcss/postcss-scss",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "prettier",
+   "spec": "^3.8.1",
+   "repo": "prettier/prettier",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "prismjs",
+   "spec": "~1.30.0",
+   "repo": "PrismJS/prism",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "prom-client",
+   "spec": "~13.2.0",
+   "repo": "siimon/prom-client",
+   "registry_license": "Apache-2.0",
+   "repo_license": {
+    "class": "permissive",
+    "label": "Apache-2.0"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "prometheus-api-metrics",
+   "spec": "~3.2.2",
+   "repo": "PayU/prometheus-api-metrics",
+   "registry_license": "Apache-2.0",
+   "repo_license": {
+    "class": "permissive",
+    "label": "Apache-2.0"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "STALE",
+     "level": "risk"
+    }
+   ],
+   "status": "risk"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "promisify-child-process",
+   "spec": "~4.1.2",
+   "repo": "jcoreio/promisify-child-process",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "QUIET",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "protobufjs",
+   "spec": "~8.8.0",
+   "repo": "protobufjs/protobuf.js",
+   "registry_license": "BSD-3-Clause",
+   "repo_license": {
+    "class": "permissive",
+    "label": "BSD"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "qrcode",
+   "spec": "~1.5.4",
+   "repo": "soldair/node-qrcode",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "STALE",
+     "level": "risk"
+    },
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "risk"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "qs",
+   "spec": "~6.16.0",
+   "repo": "ljharb/qs",
+   "registry_license": "BSD-3-Clause",
+   "repo_license": {
+    "class": "permissive",
+    "label": "BSD-3-Clause"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "radius",
+   "spec": "~1.1.4",
+   "repo": "nearbuy/node-radius",
+   "registry_license": null,
+   "repo_license": {
+    "class": "permissive",
+    "label": "BSD"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    },
+    {
+     "id": "STALE",
+     "level": "risk"
+    },
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "risk"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "redbean-node",
+   "spec": "~0.4.0",
+   "repo": "louislam/redbean-node",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "redis",
+   "spec": "~5.9.0",
+   "repo": "redis/node-redis",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "rollup-plugin-visualizer",
+   "spec": "~7.0.1",
+   "repo": "btd/rollup-plugin-visualizer",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "sass",
+   "spec": "^1.101.0",
+   "repo": "sass/dart-sass",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "semver",
+   "spec": "~7.5.4",
+   "repo": "npm/node-semver",
+   "registry_license": "ISC",
+   "repo_license": {
+    "class": "permissive",
+    "label": "ISC"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "socket.io",
+   "spec": "~4.8.3",
+   "repo": "socketio/socket.io",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "socket.io-client",
+   "spec": "~4.8.3",
+   "repo": "socketio/socket.io",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "socks-proxy-agent",
+   "spec": "~8.0.5",
+   "repo": "TooTallNate/proxy-agents",
+   "registry_license": "MIT",
+   "directory": "packages/socks-proxy-agent",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "sqlstring",
+   "spec": "~2.3.3",
+   "repo": "mysqljs/sqlstring",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "STALE",
+     "level": "risk"
+    },
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "risk"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "ssh2",
+   "spec": "~1.17.0",
+   "repo": "mscdex/ssh2",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "ssh2-sftp-client",
+   "spec": "~12.0.1",
+   "repo": "theophilusx/ssh2-sftp-client",
+   "registry_license": "Apache-2.0",
+   "repo_license": {
+    "class": "permissive",
+    "label": "Apache-2.0"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "QUIET",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "stylelint",
+   "spec": "^15.11.0",
+   "repo": "stylelint/stylelint",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "stylelint-config-prettier",
+   "spec": "^9.0.5",
+   "repo": "prettier/stylelint-config-prettier",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "ARCHIVED",
+     "level": "risk"
+    }
+   ],
+   "status": "risk"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "stylelint-config-standard",
+   "spec": "~25.0.0",
+   "repo": "stylelint/stylelint-config-standard",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "tar",
+   "spec": "~6.2.1",
+   "repo": "isaacs/node-tar",
+   "registry_license": "BlueOak-1.0.0",
+   "repo_license": {
+    "class": "unknown",
+    "label": "BlueOak-1.0.0"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_UNKNOWN",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "tcp-ping",
+   "spec": "~0.1.1",
+   "repo": "wesolyromek/tcp-ping",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "STALE",
+     "level": "risk"
+    },
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "risk"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "terser",
+   "spec": "~5.15.1",
+   "repo": "terser/terser",
+   "registry_license": "BSD-2-Clause",
+   "repo_license": {
+    "class": "permissive",
+    "label": "BSD"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    },
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "test",
+   "spec": "~3.3.0",
+   "repo": "nodejs/node-core-test",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    },
+    {
+     "id": "STALE",
+     "level": "risk"
+    }
+   ],
+   "status": "risk"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "testcontainers",
+   "spec": "^11.12.0",
+   "repo": "testcontainers/testcontainers-node",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "tldts",
+   "spec": "~7.0.23",
+   "repo": "remusao/tldts",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "tough-cookie",
+   "spec": "~4.1.4",
+   "repo": "salesforce/tough-cookie",
+   "registry_license": "BSD-3-Clause",
+   "repo_license": {
+    "class": "permissive",
+    "label": "BSD-3-Clause"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "tsx",
+   "spec": "~4.23.1",
+   "repo": "privatenumber/tsx",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LOW_FORK_RATIO",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "typescript",
+   "spec": "~4.4.4",
+   "repo": "microsoft/TypeScript",
+   "registry_license": "Apache-2.0",
+   "repo_license": {
+    "class": "permissive",
+    "label": "Apache-2.0"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "unlimited-timeout",
+   "spec": "~0.1.0",
+   "repo": "sindresorhus/unlimited-timeout",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "QUIET",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "v-pagination-3",
+   "spec": "~0.1.7",
+   "repo": "matfish2/vue-pagination-2",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "ARCHIVED",
+     "level": "risk"
+    },
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "risk"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "validator",
+   "spec": "~13.15.26",
+   "repo": "validatorjs/validator.js",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "vite",
+   "spec": "~8.1.2",
+   "repo": "vitejs/vite",
+   "registry_license": "MIT",
+   "directory": "packages/vite",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "vite-plugin-compression",
+   "spec": "^0.5.1",
+   "repo": "anncwb/vite-plugin-compression",
+   "registry_license": "MIT",
+   "directory": "packages/core",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "STALE",
+     "level": "risk"
+    }
+   ],
+   "status": "risk"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "vue",
+   "spec": "~3.5.39",
+   "repo": "vuejs/core",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "vue-chartjs",
+   "spec": "~5.2.0",
+   "repo": "apertureless/vue-chartjs",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "vue-contenteditable",
+   "spec": "~3.0.4",
+   "repo": "hl037/vue-contenteditable",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "STALE",
+     "level": "risk"
+    },
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "risk"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "vue-i18n",
+   "spec": "~11.2.8",
+   "repo": "intlify/vue-i18n",
+   "registry_license": "MIT",
+   "directory": "packages/vue-i18n",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "vue-image-crop-upload",
+   "spec": "~3.0.3",
+   "repo": "dai-siki/vue-image-crop-upload",
+   "registry_license": "ISC",
+   "repo_license": {
+    "class": "none",
+    "label": null
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_ONLY_IN_REGISTRY",
+     "level": "note"
+    },
+    {
+     "id": "STALE",
+     "level": "risk"
+    },
+    {
+     "id": "NO_RELEASES",
+     "level": "note"
+    }
+   ],
+   "status": "risk"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "vue-multiselect",
+   "spec": "~3.0.0",
+   "repo": "shentao/vue-multiselect",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "vue-prism-editor",
+   "spec": "~2.0.0-alpha.2",
+   "repo": "koca/vue-prism-editor",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "STALE",
+     "level": "risk"
+    }
+   ],
+   "status": "risk"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "vue-qrcode",
+   "spec": "~1.0.1",
+   "repo": "rx-ts/vue",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "vue-router",
+   "spec": "~4.2.5",
+   "repo": "vuejs/router",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "vue-toastification",
+   "spec": "~2.0.0-rc.5",
+   "repo": "Maronato/vue-toastification",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "STALE",
+     "level": "risk"
+    }
+   ],
+   "status": "risk"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "vuedraggable",
+   "spec": "~4.1.0",
+   "repo": "SortableJS/Vue.Draggable",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "STALE",
+     "level": "risk"
+    }
+   ],
+   "status": "risk"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "wait-on",
+   "spec": "^7.2.0",
+   "repo": "jeffbski/wait-on",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "web-push",
+   "spec": "~3.6.7",
+   "repo": "web-push-libs/web-push",
+   "registry_license": "MPL-2.0",
+   "repo_license": {
+    "class": "weak-copyleft",
+    "label": "MPL-2.0"
+   },
+   "mismatch": null,
+   "flags": [
+    {
+     "id": "LICENSE_TEXT_MODIFIED",
+     "level": "note"
+    }
+   ],
+   "status": "note"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "dev",
+   "name": "whatwg-url",
+   "spec": "~12.0.1",
+   "repo": "jsdom/whatwg-url",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "ws",
+   "spec": "~8.21.3",
+   "repo": "websockets/ws",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  },
+  {
+   "ecosystem": "npm",
+   "type": "prod",
+   "name": "zod",
+   "spec": "~4.4.3",
+   "repo": "colinhacks/zod",
+   "registry_license": "MIT",
+   "repo_license": {
+    "class": "permissive",
+    "label": "MIT"
+   },
+   "mismatch": null,
+   "flags": [],
+   "status": "ok"
+  }
+ ],
+ "manifest_commit": "7982ce027248231ee6508e71d8c74e7109f96062",
+ "checked": "2026-10-13"
+}
