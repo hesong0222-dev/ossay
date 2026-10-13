@@ -14,7 +14,7 @@ Usage:
   ossay scan <file> [--out results.json] [--csv results.csv]   (file: one repo per line, or a JSON array of "owner/repo")
   ossay history <owner/repo> [--since YYYY-MM-DD] [--json]   (commits that touched LICENSE/COPYING on the default branch; default: last 12 months)
   ossay ledger <file> [--since YYYY-MM-DD] [--out changes.json]   (history for every repo in the file)
-  ossay deps [path] [--json | --md] [--fail-on risk]   (direct deps in package.json, requirements.txt, pyproject.toml, go.mod)
+  ossay deps [path] [--json | --md] [--fail-on risk|maintenance] [--all]   (direct deps in package.json, requirements.txt, pyproject.toml, go.mod)
 
 Auth: uses GITHUB_TOKEN / GH_TOKEN, or \`gh auth token\` if available (60 req/h without).
 Heuristic output from public GitHub data. Not legal advice.`;
@@ -93,9 +93,10 @@ async function main() {
     });
     results.sort((a, b) => a.name.localeCompare(b.name));
     const out = { path: dir, manifests, summary: summarize(results), deps: results };
-    console.log(flagsArg.includes('--json') ? JSON.stringify(out, null, 2) : flagsArg.includes('--md') ? renderDepsMarkdown(out) : renderDeps(out));
+    console.log(flagsArg.includes('--json') ? JSON.stringify(out, null, 2) : flagsArg.includes('--md') ? renderDepsMarkdown(out, flagsArg.includes('--all')) : renderDeps(out, flagsArg.includes('--all')));
     const i = flagsArg.indexOf('--fail-on');
-    if (i >= 0 && flagsArg[i + 1] === 'risk' && out.summary.risk) process.exitCode = 1;
+    const on = i >= 0 && flagsArg[i + 1];
+    if ((on === 'risk' && out.summary.risk) || (on === 'maintenance' && (out.summary.risk || out.summary.maintenance))) process.exitCode = 1;
     return;
   }
   const since = opt('--since') || new Date(Date.now() - 365 * 86400000).toISOString().slice(0, 10);

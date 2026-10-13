@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { parsePackageJson, parseRequirements, parsePyproject, parseGoMod, githubRepo, licenseMismatch, depResult } from '../src/deps.mjs';
+import { parsePackageJson, parseRequirements, parsePyproject, parseGoMod, githubRepo, licenseMismatch, depResult, summarize } from '../src/deps.mjs';
 
 test('package.json: dependencies and devDependencies are both read and told apart', () => {
   const d = parsePackageJson('{"dependencies":{"express":"^4"},"devDependencies":{"@types/node":"20"}}');
@@ -61,4 +61,14 @@ test('a second root license file that matches the registry turns the mismatch in
   const r = depResult({ name: 'favico.js', ecosystem: 'npm', type: 'dev' }, { repo: 'ejci/favico.js', registry_license: 'MIT' }, card, ['strong-copyleft', 'permissive']);
   assert.equal(r.mismatch, null);
   assert.equal(r.status, 'note');
+});
+
+test('archived/stale/quiet/no-release flags go to maintenance and do not change the license status', () => {
+  const card = { license: { class: 'permissive', spdx: 'MIT' }, flags: [{ id: 'STALE', level: 'risk' }, { id: 'NO_RELEASES', level: 'note' }] };
+  const r = depResult({ name: 'x', ecosystem: 'npm', type: 'prod' }, { repo: 'a/b', registry_license: 'MIT' }, card);
+  assert.equal(r.status, 'ok');
+  assert.deepEqual(r.maintenance, ['STALE', 'NO_RELEASES']);
+  const lic = depResult({ name: 'y', ecosystem: 'npm', type: 'prod' }, { repo: 'a/c', registry_license: null }, { license: { class: 'none' }, flags: [{ id: 'NO_LICENSE', level: 'risk' }, { id: 'ARCHIVED', level: 'risk' }] });
+  assert.equal(lic.status, 'risk');
+  assert.deepEqual(summarize([r, lic]), { risk: 1, note: 0, ok: 1, unresolved: 0, error: 0, maintenance: 2 });
 });

@@ -152,33 +152,37 @@ export function depResult(dep, res, card, otherClasses = []) {
   let mm = metadataOnly ? null : licenseMismatch(res.registry_license, card.license.class);
   if (mm && otherClasses.includes(mm.registry_class)) { mm = null; flags.unshift({ id: 'SEVERAL_LICENSE_FILES', level: 'note' }); }
   if (mm) flags.unshift({ id: 'REGISTRY_LICENSE_MISMATCH', level: mm.level });
+  // Upkeep signals are kept apart: they say nothing about the right to use the code.
+  const maintenance = flags.filter((f) => MAINTENANCE.includes(f.id)).map((f) => f.id);
+  flags = flags.filter((f) => !MAINTENANCE.includes(f.id));
   const status = flags.some((f) => f.level === 'risk') ? 'risk' : flags.length ? 'note' : 'ok';
-  return { ...out, repo_license: { class: card.license.class, label: card.license.spdx || card.license.label || null }, mismatch: mm, flags, status };
+  return { ...out, repo_license: { class: card.license.class, label: card.license.spdx || card.license.label || null }, mismatch: mm, flags, maintenance, status };
 }
 
-const MAINTENANCE = new Set(['ARCHIVED', 'STALE']);
+// Order = severity; the first id of a dependency decides where it sorts in the maintenance list.
+const MAINTENANCE = ['ARCHIVED', 'STALE', 'QUIET', 'NO_RELEASES'];
 const STATUSES = ['risk', 'note', 'ok', 'unresolved', 'error'];
-export const summarize = (results) => Object.fromEntries(STATUSES.map((s) => [s, results.filter((r) => r.status === s).length]));
+export const summarize = (results) => ({ ...Object.fromEntries(STATUSES.map((s) => [s, results.filter((r) => r.status === s).length])), maintenance: results.filter((r) => r.maintenance?.length).length });
+const TOP = 5;
 const riskIds = (r) => r.flags.filter((f) => f.level === 'risk').map((f) => f.id).join(', ');
 const lic = (r) => r.repo_license ? `${r.repo_license.label || r.repo_license.class} [${r.repo_license.class}]` : '';
 const tag = (r) => `${r.name}${r.type === 'dev' ? ' (dev)' : ''}`;
+const maintList = (d, all) => {
+  const list = d.deps.filter((r) => r.maintenance?.length).sort((a, b) => MAINTENANCE.indexOf(a.maintenance[0]) - MAINTENANCE.indexOf(b.maintenance[0]));
+  return { list: all ? list : list.slice(0, TOP), more: all ? 0 : Math.max(list.length - TOP, 0) };
+};
+const summaryLine = (s) => `License: ${s.risk} need a read · Maintenance: ${s.maintenance} notes`;
 
-export function renderDeps(d) {
+export function renderDeps(d, all = false) {
   const s = d.summary;
-  const lines = [`ossay deps · ${d.path}  (${d.manifests.join(', ') || 'no manifest found'}; ${d.deps.length} direct dependencies)`, `  risk ${s.risk} · note ${s.note} · ok ${s.ok} · unresolved ${s.unresolved}${s.error ? ` · error ${s.error}` : ''}`];
-  if (d.deps.some((r) => r.status === 'risk')) lines.push('');
-  const risky = d.deps.filter((r) => r.status === 'risk');
-  const licenseRisk = risky.filter((r) => r.flags.some((f) => f.level === 'risk' && !MAINTENANCE.has(f.id)))
-    .sort((a, b) => (b.mismatch?.level === 'risk') - (a.mismatch?.level === 'risk'));
-  if (licenseRisk.length) lines.push('  License');
+  const lines = [`ossay deps · ${d.path}  (${d.manifests.join(', ') || 'no manifest found'}; ${d.deps.length} direct dependencies)`, `  ${summaryLine(s)}`, `  other notes ${s.note} · no flags ${s.ok} · unresolved ${s.unresolved}${s.error ? ` · error ${s.error}` : ''}`];
+  const licenseRisk = d.deps.filter((r) => r.status === 'risk').sort((a, b) => (b.mismatch?.level === 'risk') - (a.mismatch?.level === 'risk'));
+  if (licenseRisk.length) lines.push('', '  License');
   for (const r of licenseRisk) {
     lines.push(`  ⚠ ${tag(r).padEnd(28)} ${r.repo.padEnd(32)} ${lic(r)}`);
     if (r.mismatch) lines.push(`      registry says "${r.mismatch.registry}" (${r.mismatch.registry_class}); repo license file reads ${r.mismatch.repo_class}`);
     lines.push(`      ${riskIds(r)}`);
   }
-  const upkeep = risky.filter((r) => !licenseRisk.includes(r));
-  if (upkeep.length) lines.push(...(licenseRisk.length ? [''] : []), '  Maintenance');
-  for (const r of upkeep) lines.push(`  ⚠ ${tag(r).padEnd(28)} ${r.repo.padEnd(32)} ${riskIds(r)}`);
   const has = (r, id) => r.flags?.some((f) => f.id === id);
   const notes = d.deps.filter((r) => r.mismatch?.level === 'note' || has(r, 'LICENSE_ONLY_IN_REGISTRY') || has(r, 'SEVERAL_LICENSE_FILES'));
   if (notes.length) lines.push('', '  Notes');
@@ -187,16 +191,22 @@ export function renderDeps(d) {
       : has(r, 'SEVERAL_LICENSE_FILES') ? `  · ${tag(r)}: ${r.repo} has several license files; one matches the registry's "${r.registry_license}" (dual licensing?)`
         : `  · ${tag(r)}: no license file in ${r.repo}; "${r.registry_license}" is declared only in registry metadata`);
   }
+  const m = maintList(d, all);
+  if (m.list.length) lines.push('', `  Maintenance (${s.maintenance} dependencies; not about license rights)`);
+  for (const r of m.list) lines.push(`  · ${tag(r).padEnd(28)} ${r.repo.padEnd(32)} ${r.maintenance.join(', ')}`);
+  if (m.more) lines.push(`  … and ${m.more} more (--all)`);
   const un = d.deps.filter((r) => r.status === 'unresolved' || r.status === 'error');
   if (un.length) lines.push('', `  Unresolved (not checked): ${un.map((r) => `${r.name}${r.status === 'error' ? ' [error]' : ''}`).join(', ')}`);
   lines.push('', '  Direct dependencies only. Heuristic summary from public data. Not legal advice.');
   return lines.join('\n');
 }
 
-export function renderDepsMarkdown(d) {
+export function renderDepsMarkdown(d, all = false) {
   const s = d.summary;
-  const row = (r) => `| ${r.name} | ${r.ecosystem}${r.type === 'dev' ? ' dev' : ''} | ${r.repo ? `[${r.repo}](https://github.com/${r.repo})` : '—'} | ${r.registry_license || '—'} | ${lic(r) || '—'} | ${r.status === 'unresolved' || r.status === 'error' ? r.status : r.flags.filter((f) => f.level === 'risk').map((f) => `**${f.id}**`).join(', ') || 'ok'} |`;
-  const head = '| Dependency | Type | Repo | Registry license | Repo license file | Risk flags |\n|---|---|---|---|---|---|';
+  const row = (r) => `| ${r.name} | ${r.ecosystem}${r.type === 'dev' ? ' dev' : ''} | ${r.repo ? `[${r.repo}](https://github.com/${r.repo})` : '—'} | ${r.registry_license || '—'} | ${lic(r) || '—'} | ${r.status === 'unresolved' || r.status === 'error' ? r.status : r.flags.filter((f) => f.level === 'risk').map((f) => `**${f.id}**`).join(', ') || (r.maintenance.length ? r.maintenance.join(', ') : 'ok')} |`;
+  const head = '| Dependency | Type | Repo | Registry license | Repo license file | Flags |\n|---|---|---|---|---|---|';
   const risky = d.deps.filter((r) => r.status === 'risk');
-  return `### ossay deps\n\n${d.deps.length} direct dependencies (${d.manifests.join(', ')}): **${s.risk} risk** · ${s.note} note · ${s.ok} ok · ${s.unresolved} unresolved\n\n${risky.length ? `${head}\n${risky.map(row).join('\n')}\n` : 'No dependency needs attention.\n'}\n<details><summary>All dependencies</summary>\n\n${head}\n${d.deps.map(row).join('\n')}\n\n</details>\n\n<sub>Direct dependencies only. Heuristic, from public data. Not legal advice.</sub>\n`;
+  const m = maintList(d, all);
+  const maint = m.list.length ? `\n**Maintenance** (${s.maintenance} dependencies; not about license rights)\n\n${head}\n${m.list.map(row).join('\n')}\n${m.more ? `\n… and ${m.more} more (\`--all\`)\n` : ''}` : '';
+  return `### ossay deps\n\n${d.deps.length} direct dependencies (${d.manifests.join(', ')}): **${summaryLine(s)}** · ${s.note} other notes · ${s.ok} no flags · ${s.unresolved} unresolved\n\n${risky.length ? `**License**\n\n${head}\n${risky.map(row).join('\n')}\n` : 'No dependency needs a license read.\n'}${maint}\n<details><summary>All dependencies</summary>\n\n${head}\n${d.deps.map(row).join('\n')}\n\n</details>\n\n<sub>Direct dependencies only. Heuristic, from public data. Not legal advice.</sub>\n`;
 }

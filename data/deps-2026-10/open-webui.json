@@ -1,1509 +1,1531 @@
 {
- "path": "open-webui/open-webui",
- "manifests": [
-  "pyproject.toml"
- ],
- "summary": {
-  "risk": 6,
-  "note": 20,
-  "ok": 59,
-  "unresolved": 5,
-  "error": 0
- },
- "deps": [
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "accelerate",
-   "spec": "accelerate==1.13.0",
-   "repo": "huggingface/accelerate",
-   "registry_license": "Apache",
-   "repo_license": {
-    "class": "permissive",
-    "label": "Apache-2.0"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
+  "path": "open-webui/open-webui",
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "summary": {
+    "risk": 0,
+    "note": 11,
+    "ok": 74,
+    "unresolved": 5,
+    "error": 0,
+    "maintenance": 20
   },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "aiocache",
-   "spec": "aiocache==0.12.3",
-   "repo": "aio-libs/aiocache",
-   "registry_license": null,
-   "repo_license": {
-    "class": "permissive",
-    "label": "BSD-3-Clause"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "aiodns",
-   "spec": "aiodns==3.6.1",
-   "repo": "aio-libs/aiodns",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "aiofiles",
-   "spec": "aiofiles==25.1.0",
-   "repo": "Tinche/aiofiles",
-   "registry_license": "Apache-2.0",
-   "repo_license": {
-    "class": "permissive",
-    "label": "Apache-2.0"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "aiohttp",
-   "spec": "aiohttp==3.14.3",
-   "repo": "aio-libs/aiohttp",
-   "registry_license": "Apache-2.0 AND MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "Apache-2.0"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "aiosqlite",
-   "spec": "aiosqlite==0.22.1",
-   "repo": "omnilib/aiosqlite",
-   "registry_license": "MIT License",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [
+  "manifest_commit": "f8ae8a6c328946dc62cd0712961a0632574581bf",
+  "checked": "2026-10-13",
+  "deps": [
     {
-     "id": "QUIET",
-     "level": "note"
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "accelerate",
+      "spec": "accelerate==1.13.0",
+      "repo": "huggingface/accelerate",
+      "registry_license": "Apache",
+      "repo_license": {
+        "class": "permissive",
+        "label": "Apache-2.0"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
     },
     {
-     "id": "NO_RELEASES",
-     "level": "note"
-    }
-   ],
-   "status": "note"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "alembic",
-   "spec": "alembic==1.18.4",
-   "repo": "sqlalchemy/alembic",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "anthropic",
-   "spec": "anthropic==0.86.0",
-   "repo": "anthropics/anthropic-sdk-python",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "argon2-cffi",
-   "spec": "argon2-cffi==25.1.0",
-   "repo": "hynek/argon2-cffi",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "asgiref",
-   "spec": "asgiref==3.11.1",
-   "repo": "django/asgiref",
-   "registry_license": "BSD-3-Clause",
-   "repo_license": {
-    "class": "permissive",
-    "label": "BSD-3-Clause"
-   },
-   "mismatch": null,
-   "flags": [
-    {
-     "id": "NO_RELEASES",
-     "level": "note"
-    }
-   ],
-   "status": "note"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "authlib",
-   "spec": "authlib==1.7.2",
-   "repo": "authlib/authlib",
-   "registry_license": "BSD-3-Clause",
-   "repo_license": {
-    "class": "permissive",
-    "label": "BSD-3-Clause"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "azure-ai-documentintelligence",
-   "spec": "azure-ai-documentintelligence==1.0.2",
-   "repo": "Azure/azure-sdk-for-python",
-   "registry_license": "MIT License",
-   "directory": "sdk",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "azure-identity",
-   "spec": "azure-identity==1.25.3",
-   "repo": "Azure/azure-sdk-for-python",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "azure-storage-blob",
-   "spec": "azure-storage-blob==12.29.0",
-   "repo": "Azure/azure-sdk-for-python",
-   "registry_license": "MIT License",
-   "directory": "sdk/storage/azure-storage-blob",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [
-    {
-     "id": "LICENSE_TEXT_MODIFIED",
-     "level": "note"
-    }
-   ],
-   "status": "note"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "bcrypt",
-   "spec": "bcrypt==5.0.0",
-   "repo": "pyca/bcrypt",
-   "registry_license": "Apache-2.0",
-   "repo_license": {
-    "class": "permissive",
-    "label": "Apache-2.0"
-   },
-   "mismatch": null,
-   "flags": [
-    {
-     "id": "NO_RELEASES",
-     "level": "note"
-    }
-   ],
-   "status": "note"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "beautifulsoup4",
-   "spec": "beautifulsoup4==4.14.3",
-   "repo": null,
-   "registry_license": "MIT License",
-   "status": "unresolved",
-   "reason": "no GitHub repo in registry metadata"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "black",
-   "spec": "black==26.5.1",
-   "repo": "psf/black",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "boto3",
-   "spec": "boto3==1.42.62",
-   "repo": "boto/boto3",
-   "registry_license": "Apache-2.0",
-   "repo_license": {
-    "class": "permissive",
-    "label": "Apache-2.0"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "Brotli",
-   "spec": "Brotli==1.2.0",
-   "repo": "google/brotli",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "brotlicffi",
-   "spec": "brotlicffi==1.2.0.1",
-   "repo": "python-hyper/brotlicffi",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [
-    {
-     "id": "NO_RELEASES",
-     "level": "note"
-    }
-   ],
-   "status": "note"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "chardet",
-   "spec": "chardet==7.4.3",
-   "repo": "chardet/chardet",
-   "registry_license": "0BSD",
-   "repo_license": {
-    "class": "permissive",
-    "label": "0BSD"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "chromadb",
-   "spec": "chromadb==1.5.9",
-   "repo": "chroma-core/chroma",
-   "registry_license": "Apache Software License",
-   "repo_license": {
-    "class": "permissive",
-    "label": "Apache-2.0"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "cryptography",
-   "spec": "cryptography==48.0.0",
-   "repo": "pyca/cryptography",
-   "registry_license": "Apache-2.0 OR BSD-3-Clause",
-   "repo_license": {
-    "class": "permissive",
-    "label": "dual permissive (files)"
-   },
-   "mismatch": null,
-   "flags": [
-    {
-     "id": "NO_RELEASES",
-     "level": "note"
-    }
-   ],
-   "status": "note"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "ddgs",
-   "spec": "ddgs==9.14.4",
-   "repo": "deedy5/ddgs",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "docx2txt",
-   "spec": "docx2txt==0.9",
-   "repo": "ankushshah89/python-docx2txt",
-   "registry_license": null,
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [
-    {
-     "id": "STALE",
-     "level": "risk"
-    }
-   ],
-   "status": "risk"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "einops",
-   "spec": "einops==0.8.2",
-   "repo": "arogozhnikov/einops",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "fake-useragent",
-   "spec": "fake-useragent==2.2.0",
-   "repo": "fake-useragent/fake-useragent",
-   "registry_license": "Apache-2.0",
-   "repo_license": {
-    "class": "permissive",
-    "label": "Apache-2.0"
-   },
-   "mismatch": null,
-   "flags": [
-    {
-     "id": "ARCHIVED",
-     "level": "risk"
-    }
-   ],
-   "status": "risk"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "fastapi",
-   "spec": "fastapi==0.136.3",
-   "repo": "fastapi/fastapi",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "faster-whisper",
-   "spec": "faster-whisper==1.2.1",
-   "repo": "SYSTRAN/faster-whisper",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "ftfy",
-   "spec": "ftfy==6.3.1",
-   "repo": "rspeer/python-ftfy",
-   "registry_license": "Apache-2.0",
-   "repo_license": {
-    "class": "permissive",
-    "label": "Apache-2.0"
-   },
-   "mismatch": null,
-   "flags": [
-    {
-     "id": "LICENSE_TEXT_MODIFIED",
-     "level": "note"
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "aiocache",
+      "spec": "aiocache==0.12.3",
+      "repo": "aio-libs/aiocache",
+      "registry_license": null,
+      "repo_license": {
+        "class": "permissive",
+        "label": "BSD-3-Clause"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
     },
     {
-     "id": "STALE",
-     "level": "risk"
-    }
-   ],
-   "status": "risk"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "google-cloud-storage",
-   "spec": "google-cloud-storage==3.9.0",
-   "repo": "googleapis/google-cloud-python",
-   "registry_license": "Apache-2.0",
-   "directory": "packages/google-cloud-storage",
-   "repo_license": {
-    "class": "permissive",
-    "label": "Apache-2.0"
-   },
-   "mismatch": null,
-   "flags": [
-    {
-     "id": "LICENSE_TEXT_MODIFIED",
-     "level": "note"
-    }
-   ],
-   "status": "note"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "google-re2",
-   "spec": "google-re2==1.1.20251105",
-   "repo": "google/re2",
-   "registry_license": "BSD License",
-   "repo_license": {
-    "class": "permissive",
-    "label": "BSD-3-Clause"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "googleapis-common-protos",
-   "spec": "googleapis-common-protos==1.75.0",
-   "repo": "googleapis/google-cloud-python",
-   "registry_license": "Apache-2.0",
-   "directory": "packages/googleapis-common-protos",
-   "repo_license": {
-    "class": "permissive",
-    "label": "Apache-2.0"
-   },
-   "mismatch": null,
-   "flags": [
-    {
-     "id": "LICENSE_TEXT_MODIFIED",
-     "level": "note"
-    }
-   ],
-   "status": "note"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "hiredis",
-   "spec": "hiredis==3.4.2",
-   "repo": "redis/hiredis-py",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "httpx",
-   "spec": "httpx[socks,http2,zstd,cli,brotli]==0.28.1",
-   "repo": "encode/httpx",
-   "registry_license": "BSD-3-Clause",
-   "repo_license": {
-    "class": "permissive",
-    "label": "BSD-3-Clause"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "itsdangerous",
-   "spec": "itsdangerous==2.2.0",
-   "repo": "pallets/itsdangerous",
-   "registry_license": "BSD License",
-   "repo_license": {
-    "class": "permissive",
-    "label": "BSD-3-Clause"
-   },
-   "mismatch": null,
-   "flags": [
-    {
-     "id": "STALE",
-     "level": "risk"
-    }
-   ],
-   "status": "risk"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "joserfc",
-   "spec": "joserfc==1.7.4",
-   "repo": "authlib/joserfc",
-   "registry_license": "BSD-3-Clause",
-   "repo_license": {
-    "class": "permissive",
-    "label": "BSD-3-Clause"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "langchain-classic",
-   "spec": "langchain-classic==1.0.7",
-   "repo": "langchain-ai/langchain",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "langchain-core",
-   "spec": "langchain-core==1.4.8",
-   "repo": "langchain-ai/langchain",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "langchain-text-splitters",
-   "spec": "langchain-text-splitters==1.1.2",
-   "repo": "langchain-ai/langchain",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "ldap3",
-   "spec": "ldap3==2.9.1",
-   "repo": "cannatag/ldap3",
-   "registry_license": "LGPL v3",
-   "repo_license": {
-    "class": "weak-copyleft",
-    "label": "LGPL"
-   },
-   "mismatch": null,
-   "flags": [
-    {
-     "id": "LICENSE_TEXT_MODIFIED",
-     "level": "note"
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "aiodns",
+      "spec": "aiodns==3.6.1",
+      "repo": "aio-libs/aiodns",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
     },
     {
-     "id": "NO_RELEASES",
-     "level": "note"
-    }
-   ],
-   "status": "note"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "loguru",
-   "spec": "loguru==0.7.3",
-   "repo": "Delgan/loguru",
-   "registry_license": "MIT License",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "lxml",
-   "spec": "lxml==6.1.1",
-   "repo": "lxml/lxml",
-   "registry_license": "BSD-3-Clause",
-   "repo_license": {
-    "class": "permissive",
-    "label": "BSD-3-Clause"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "Markdown",
-   "spec": "Markdown==3.10.2",
-   "repo": "Python-Markdown/markdown",
-   "registry_license": "BSD-3-Clause",
-   "repo_license": {
-    "class": "permissive",
-    "label": "BSD-3-Clause"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "mcp",
-   "spec": "mcp==1.27.2",
-   "repo": "modelcontextprotocol/python-sdk",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "msoffcrypto-tool",
-   "spec": "msoffcrypto-tool==6.0.0",
-   "repo": "nolze/msoffcrypto-tool",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [
-    {
-     "id": "NO_RELEASES",
-     "level": "note"
-    }
-   ],
-   "status": "note"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "onnxruntime",
-   "spec": "onnxruntime==1.26.0",
-   "repo": "microsoft/onnxruntime",
-   "registry_license": "MIT License",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "openai",
-   "spec": "openai==2.29.0",
-   "repo": "openai/openai-python",
-   "registry_license": "Apache-2.0",
-   "repo_license": {
-    "class": "permissive",
-    "label": "Apache-2.0"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "opencv-python-headless",
-   "spec": "opencv-python-headless==4.13.0.92",
-   "repo": "opencv/opencv-python",
-   "registry_license": "Apache 2.0",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "openpyxl",
-   "spec": "openpyxl==3.1.5",
-   "repo": null,
-   "registry_license": "MIT",
-   "status": "unresolved",
-   "reason": "no GitHub repo in registry metadata"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "opensearch-py",
-   "spec": "opensearch-py==3.2.0",
-   "repo": "opensearch-project/opensearch-py",
-   "registry_license": "Apache-2.0",
-   "repo_license": {
-    "class": "permissive",
-    "label": "Apache-2.0"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "orjson",
-   "spec": "orjson==3.11.9",
-   "repo": "ijl/orjson",
-   "registry_license": "MPL-2.0 AND (Apache-2.0 OR MIT)",
-   "repo_license": {
-    "class": "permissive",
-    "label": "Apache-2.0"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "pandas",
-   "spec": "pandas==3.0.3",
-   "repo": "pandas-dev/pandas",
-   "registry_license": "BSD License",
-   "repo_license": {
-    "class": "permissive",
-    "label": "BSD-3-Clause"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "pillow",
-   "spec": "pillow==12.3.0",
-   "repo": "python-pillow/Pillow",
-   "registry_license": "MIT-CMU",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT-CMU"
-   },
-   "mismatch": null,
-   "flags": [
-    {
-     "id": "LICENSE_TEXT_MODIFIED",
-     "level": "note"
-    }
-   ],
-   "status": "note"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "psutil",
-   "spec": "psutil==7.2.2",
-   "repo": "giampaolo/psutil",
-   "registry_license": "BSD-3-Clause",
-   "repo_license": {
-    "class": "permissive",
-    "label": "BSD-3-Clause"
-   },
-   "mismatch": null,
-   "flags": [
-    {
-     "id": "NO_RELEASES",
-     "level": "note"
-    }
-   ],
-   "status": "note"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "psycopg",
-   "spec": "psycopg[binary]==3.3.4",
-   "repo": "psycopg/psycopg",
-   "registry_license": "LGPL-3.0-only",
-   "repo_license": {
-    "class": "weak-copyleft",
-    "label": "LGPL-3.0"
-   },
-   "mismatch": null,
-   "flags": [
-    {
-     "id": "NO_RELEASES",
-     "level": "note"
-    }
-   ],
-   "status": "note"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "pyarrow",
-   "spec": "pyarrow==20.0.0",
-   "repo": "apache/arrow",
-   "registry_license": "Apache-2.0",
-   "repo_license": {
-    "class": "permissive",
-    "label": "Apache-2.0"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "pycrdt",
-   "spec": "pycrdt==0.14.8",
-   "repo": "y-crdt/pycrdt",
-   "registry_license": "MIT License",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "pydantic",
-   "spec": "pydantic==2.13.4",
-   "repo": "pydantic/pydantic",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "pydub",
-   "spec": "pydub==0.25.1",
-   "repo": null,
-   "registry_license": "MIT",
-   "status": "unresolved",
-   "reason": "no GitHub repo in registry metadata"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "PyJWT",
-   "spec": "PyJWT[crypto]==2.13.0",
-   "repo": "jpadilla/pyjwt",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "PyMySQL",
-   "spec": "PyMySQL==1.2.0",
-   "repo": "PyMySQL/PyMySQL",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "pyotp",
-   "spec": "pyotp==2.9.0",
-   "repo": "pyauth/pyotp",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [
-    {
-     "id": "LICENSE_TEXT_MODIFIED",
-     "level": "note"
-    }
-   ],
-   "status": "note"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "pypandoc",
-   "spec": "pypandoc==1.17",
-   "repo": "JessicaTegner/pypandoc",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "pypdf",
-   "spec": "pypdf==6.7.5",
-   "repo": "py-pdf/pypdf",
-   "registry_license": "BSD-3-Clause",
-   "repo_license": {
-    "class": "permissive",
-    "label": "BSD"
-   },
-   "mismatch": null,
-   "flags": [
-    {
-     "id": "LICENSE_TEXT_MODIFIED",
-     "level": "note"
-    }
-   ],
-   "status": "note"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "python-docx",
-   "spec": "python-docx==1.2.0",
-   "repo": "python-openxml/python-docx",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [
-    {
-     "id": "NO_RELEASES",
-     "level": "note"
-    }
-   ],
-   "status": "note"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "python-mimeparse",
-   "spec": "python-mimeparse==2.0.0",
-   "repo": "falconry/python-mimeparse",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "python-multipart",
-   "spec": "python-multipart==0.0.32",
-   "repo": "Kludex/python-multipart",
-   "registry_license": "Apache-2.0",
-   "repo_license": {
-    "class": "permissive",
-    "label": "Apache-2.0"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "python-pptx",
-   "spec": "python-pptx==1.0.2",
-   "repo": "scanny/python-pptx",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [
-    {
-     "id": "STALE",
-     "level": "risk"
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "aiofiles",
+      "spec": "aiofiles==25.1.0",
+      "repo": "Tinche/aiofiles",
+      "registry_license": "Apache-2.0",
+      "repo_license": {
+        "class": "permissive",
+        "label": "Apache-2.0"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
     },
     {
-     "id": "NO_RELEASES",
-     "level": "note"
-    }
-   ],
-   "status": "risk"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "python-socketio",
-   "spec": "python-socketio==5.16.2",
-   "repo": null,
-   "registry_license": "MIT",
-   "status": "unresolved",
-   "reason": "no GitHub repo in registry metadata"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "pytz",
-   "spec": "pytz==2026.2",
-   "repo": "stub42/pytz",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "pyxlsb",
-   "spec": "pyxlsb==1.0.10",
-   "repo": "willtrnr/pyxlsb",
-   "registry_license": "LGPLv3+",
-   "repo_license": {
-    "class": "weak-copyleft",
-    "label": "LGPL-3.0"
-   },
-   "mismatch": null,
-   "flags": [
-    {
-     "id": "STALE",
-     "level": "risk"
-    }
-   ],
-   "status": "risk"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "qrcode",
-   "spec": "qrcode==8.2",
-   "repo": "lincolnloop/python-qrcode",
-   "registry_license": "BSD",
-   "repo_license": {
-    "class": "permissive",
-    "label": "BSD"
-   },
-   "mismatch": null,
-   "flags": [
-    {
-     "id": "LICENSE_TEXT_MODIFIED",
-     "level": "note"
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "aiohttp",
+      "spec": "aiohttp==3.14.3",
+      "repo": "aio-libs/aiohttp",
+      "registry_license": "Apache-2.0 AND MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "Apache-2.0"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
     },
     {
-     "id": "QUIET",
-     "level": "note"
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "aiosqlite",
+      "spec": "aiosqlite==0.22.1",
+      "repo": "omnilib/aiosqlite",
+      "registry_license": "MIT License",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [
+        "QUIET",
+        "NO_RELEASES"
+      ],
+      "status": "ok"
     },
     {
-     "id": "NO_RELEASES",
-     "level": "note"
-    }
-   ],
-   "status": "note"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "rank-bm25",
-   "spec": "rank-bm25==0.2.2",
-   "repo": "dorianbrown/rank_bm25",
-   "registry_license": "Apache2.0",
-   "repo_license": {
-    "class": "permissive",
-    "label": "Apache-2.0"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "rapidocr",
-   "spec": "rapidocr==3.10.0",
-   "repo": "RapidAI/RapidOCR",
-   "registry_license": "Apache-2.0",
-   "repo_license": {
-    "class": "permissive",
-    "label": "Apache-2.0"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "redis",
-   "spec": "redis==8.0.1",
-   "repo": "redis/redis-py",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "regex",
-   "spec": "regex==2026.5.9",
-   "repo": "mrabarnett/mrab-regex",
-   "registry_license": "Apache-2.0 AND CNRI-Python",
-   "repo_license": {
-    "class": "permissive",
-    "label": "Apache-2.0"
-   },
-   "mismatch": null,
-   "flags": [
-    {
-     "id": "LICENSE_TEXT_MODIFIED",
-     "level": "note"
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "alembic",
+      "spec": "alembic==1.18.4",
+      "repo": "sqlalchemy/alembic",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
     },
     {
-     "id": "NO_RELEASES",
-     "level": "note"
-    }
-   ],
-   "status": "note"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "requests",
-   "spec": "requests==2.34.2",
-   "repo": "psf/requests",
-   "registry_license": "Apache-2.0",
-   "repo_license": {
-    "class": "permissive",
-    "label": "Apache-2.0"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "sentence-transformers",
-   "spec": "sentence-transformers==5.5.1",
-   "repo": "huggingface/sentence-transformers",
-   "registry_license": "Apache-2.0",
-   "repo_license": {
-    "class": "permissive",
-    "label": "Apache-2.0"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "sentencepiece",
-   "spec": "sentencepiece==0.2.1",
-   "repo": "google/sentencepiece",
-   "registry_license": "Apache-2.0",
-   "repo_license": {
-    "class": "permissive",
-    "label": "Apache-2.0"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "soundfile",
-   "spec": "soundfile==0.13.1",
-   "repo": "bastibe/python-soundfile",
-   "registry_license": "BSD 3-Clause License",
-   "repo_license": {
-    "class": "permissive",
-    "label": "BSD-3-Clause"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "sqlalchemy",
-   "spec": "sqlalchemy[asyncio]==2.0.50",
-   "repo": "sqlalchemy/sqlalchemy",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "starlette-compress",
-   "spec": "starlette-compress==1.7.1",
-   "repo": "Zaczero/pkgs",
-   "registry_license": "0BSD",
-   "directory": "starlette-compress",
-   "repo_license": {
-    "class": "none",
-    "label": null
-   },
-   "mismatch": null,
-   "flags": [
-    {
-     "id": "LICENSE_ONLY_IN_REGISTRY",
-     "level": "note"
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "anthropic",
+      "spec": "anthropic==0.86.0",
+      "repo": "anthropics/anthropic-sdk-python",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
     },
     {
-     "id": "NO_RELEASES",
-     "level": "note"
-    }
-   ],
-   "status": "note"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "starsessions",
-   "spec": "starsessions[redis]==2.2.1",
-   "repo": "alex-oleshkevich/starsessions",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "argon2-cffi",
+      "spec": "argon2-cffi==25.1.0",
+      "repo": "hynek/argon2-cffi",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
     {
-     "id": "QUIET",
-     "level": "note"
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "asgiref",
+      "spec": "asgiref==3.11.1",
+      "repo": "django/asgiref",
+      "registry_license": "BSD-3-Clause",
+      "repo_license": {
+        "class": "permissive",
+        "label": "BSD-3-Clause"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [
+        "NO_RELEASES"
+      ],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "authlib",
+      "spec": "authlib==1.7.2",
+      "repo": "authlib/authlib",
+      "registry_license": "BSD-3-Clause",
+      "repo_license": {
+        "class": "permissive",
+        "label": "BSD-3-Clause"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "azure-ai-documentintelligence",
+      "spec": "azure-ai-documentintelligence==1.0.2",
+      "repo": "Azure/azure-sdk-for-python",
+      "registry_license": "MIT License",
+      "directory": "sdk",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "azure-identity",
+      "spec": "azure-identity==1.25.3",
+      "repo": "Azure/azure-sdk-for-python",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "azure-storage-blob",
+      "spec": "azure-storage-blob==12.29.0",
+      "repo": "Azure/azure-sdk-for-python",
+      "registry_license": "MIT License",
+      "directory": "sdk/storage/azure-storage-blob",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [
+        {
+          "id": "LICENSE_TEXT_MODIFIED",
+          "level": "note"
+        }
+      ],
+      "maintenance": [],
+      "status": "note"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "bcrypt",
+      "spec": "bcrypt==5.0.0",
+      "repo": "pyca/bcrypt",
+      "registry_license": "Apache-2.0",
+      "repo_license": {
+        "class": "permissive",
+        "label": "Apache-2.0"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [
+        "NO_RELEASES"
+      ],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "beautifulsoup4",
+      "spec": "beautifulsoup4==4.14.3",
+      "repo": null,
+      "registry_license": "MIT License",
+      "status": "unresolved",
+      "reason": "no GitHub repo in registry metadata"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "black",
+      "spec": "black==26.5.1",
+      "repo": "psf/black",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "boto3",
+      "spec": "boto3==1.42.62",
+      "repo": "boto/boto3",
+      "registry_license": "Apache-2.0",
+      "repo_license": {
+        "class": "permissive",
+        "label": "Apache-2.0"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "Brotli",
+      "spec": "Brotli==1.2.0",
+      "repo": "google/brotli",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "brotlicffi",
+      "spec": "brotlicffi==1.2.0.1",
+      "repo": "python-hyper/brotlicffi",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [
+        "NO_RELEASES"
+      ],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "chardet",
+      "spec": "chardet==7.4.3",
+      "repo": "chardet/chardet",
+      "registry_license": "0BSD",
+      "repo_license": {
+        "class": "permissive",
+        "label": "0BSD"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "chromadb",
+      "spec": "chromadb==1.5.9",
+      "repo": "chroma-core/chroma",
+      "registry_license": "Apache Software License",
+      "repo_license": {
+        "class": "permissive",
+        "label": "Apache-2.0"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "cryptography",
+      "spec": "cryptography==48.0.0",
+      "repo": "pyca/cryptography",
+      "registry_license": "Apache-2.0 OR BSD-3-Clause",
+      "repo_license": {
+        "class": "permissive",
+        "label": "dual permissive (files)"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [
+        "NO_RELEASES"
+      ],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "ddgs",
+      "spec": "ddgs==9.14.4",
+      "repo": "deedy5/ddgs",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "docx2txt",
+      "spec": "docx2txt==0.9",
+      "repo": "ankushshah89/python-docx2txt",
+      "registry_license": null,
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [
+        "STALE"
+      ],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "einops",
+      "spec": "einops==0.8.2",
+      "repo": "arogozhnikov/einops",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "fake-useragent",
+      "spec": "fake-useragent==2.2.0",
+      "repo": "fake-useragent/fake-useragent",
+      "registry_license": "Apache-2.0",
+      "repo_license": {
+        "class": "permissive",
+        "label": "Apache-2.0"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [
+        "ARCHIVED"
+      ],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "fastapi",
+      "spec": "fastapi==0.136.3",
+      "repo": "fastapi/fastapi",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "faster-whisper",
+      "spec": "faster-whisper==1.2.1",
+      "repo": "SYSTRAN/faster-whisper",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "ftfy",
+      "spec": "ftfy==6.3.1",
+      "repo": "rspeer/python-ftfy",
+      "registry_license": "Apache-2.0",
+      "repo_license": {
+        "class": "permissive",
+        "label": "Apache-2.0"
+      },
+      "mismatch": null,
+      "flags": [
+        {
+          "id": "LICENSE_TEXT_MODIFIED",
+          "level": "note"
+        }
+      ],
+      "maintenance": [
+        "STALE"
+      ],
+      "status": "note"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "google-cloud-storage",
+      "spec": "google-cloud-storage==3.9.0",
+      "repo": "googleapis/google-cloud-python",
+      "registry_license": "Apache-2.0",
+      "directory": "packages/google-cloud-storage",
+      "repo_license": {
+        "class": "permissive",
+        "label": "Apache-2.0"
+      },
+      "mismatch": null,
+      "flags": [
+        {
+          "id": "LICENSE_TEXT_MODIFIED",
+          "level": "note"
+        }
+      ],
+      "maintenance": [],
+      "status": "note"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "google-re2",
+      "spec": "google-re2==1.1.20251105",
+      "repo": "google/re2",
+      "registry_license": "BSD License",
+      "repo_license": {
+        "class": "permissive",
+        "label": "BSD-3-Clause"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "googleapis-common-protos",
+      "spec": "googleapis-common-protos==1.75.0",
+      "repo": "googleapis/google-cloud-python",
+      "registry_license": "Apache-2.0",
+      "directory": "packages/googleapis-common-protos",
+      "repo_license": {
+        "class": "permissive",
+        "label": "Apache-2.0"
+      },
+      "mismatch": null,
+      "flags": [
+        {
+          "id": "LICENSE_TEXT_MODIFIED",
+          "level": "note"
+        }
+      ],
+      "maintenance": [],
+      "status": "note"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "hiredis",
+      "spec": "hiredis==3.4.2",
+      "repo": "redis/hiredis-py",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "httpx",
+      "spec": "httpx[socks,http2,zstd,cli,brotli]==0.28.1",
+      "repo": "encode/httpx",
+      "registry_license": "BSD-3-Clause",
+      "repo_license": {
+        "class": "permissive",
+        "label": "BSD-3-Clause"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "itsdangerous",
+      "spec": "itsdangerous==2.2.0",
+      "repo": "pallets/itsdangerous",
+      "registry_license": "BSD License",
+      "repo_license": {
+        "class": "permissive",
+        "label": "BSD-3-Clause"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [
+        "STALE"
+      ],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "joserfc",
+      "spec": "joserfc==1.7.4",
+      "repo": "authlib/joserfc",
+      "registry_license": "BSD-3-Clause",
+      "repo_license": {
+        "class": "permissive",
+        "label": "BSD-3-Clause"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "langchain-classic",
+      "spec": "langchain-classic==1.0.7",
+      "repo": "langchain-ai/langchain",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "langchain-core",
+      "spec": "langchain-core==1.4.8",
+      "repo": "langchain-ai/langchain",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "langchain-text-splitters",
+      "spec": "langchain-text-splitters==1.1.2",
+      "repo": "langchain-ai/langchain",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "ldap3",
+      "spec": "ldap3==2.9.1",
+      "repo": "cannatag/ldap3",
+      "registry_license": "LGPL v3",
+      "repo_license": {
+        "class": "weak-copyleft",
+        "label": "LGPL"
+      },
+      "mismatch": null,
+      "flags": [
+        {
+          "id": "LICENSE_TEXT_MODIFIED",
+          "level": "note"
+        }
+      ],
+      "maintenance": [
+        "NO_RELEASES"
+      ],
+      "status": "note"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "loguru",
+      "spec": "loguru==0.7.3",
+      "repo": "Delgan/loguru",
+      "registry_license": "MIT License",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "lxml",
+      "spec": "lxml==6.1.1",
+      "repo": "lxml/lxml",
+      "registry_license": "BSD-3-Clause",
+      "repo_license": {
+        "class": "permissive",
+        "label": "BSD-3-Clause"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "Markdown",
+      "spec": "Markdown==3.10.2",
+      "repo": "Python-Markdown/markdown",
+      "registry_license": "BSD-3-Clause",
+      "repo_license": {
+        "class": "permissive",
+        "label": "BSD-3-Clause"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "mcp",
+      "spec": "mcp==1.27.2",
+      "repo": "modelcontextprotocol/python-sdk",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "msoffcrypto-tool",
+      "spec": "msoffcrypto-tool==6.0.0",
+      "repo": "nolze/msoffcrypto-tool",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [
+        "NO_RELEASES"
+      ],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "onnxruntime",
+      "spec": "onnxruntime==1.26.0",
+      "repo": "microsoft/onnxruntime",
+      "registry_license": "MIT License",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "openai",
+      "spec": "openai==2.29.0",
+      "repo": "openai/openai-python",
+      "registry_license": "Apache-2.0",
+      "repo_license": {
+        "class": "permissive",
+        "label": "Apache-2.0"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "opencv-python-headless",
+      "spec": "opencv-python-headless==4.13.0.92",
+      "repo": "opencv/opencv-python",
+      "registry_license": "Apache 2.0",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "openpyxl",
+      "spec": "openpyxl==3.1.5",
+      "repo": null,
+      "registry_license": "MIT",
+      "status": "unresolved",
+      "reason": "no GitHub repo in registry metadata"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "opensearch-py",
+      "spec": "opensearch-py==3.2.0",
+      "repo": "opensearch-project/opensearch-py",
+      "registry_license": "Apache-2.0",
+      "repo_license": {
+        "class": "permissive",
+        "label": "Apache-2.0"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "orjson",
+      "spec": "orjson==3.11.9",
+      "repo": "ijl/orjson",
+      "registry_license": "MPL-2.0 AND (Apache-2.0 OR MIT)",
+      "repo_license": {
+        "class": "permissive",
+        "label": "Apache-2.0"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "pandas",
+      "spec": "pandas==3.0.3",
+      "repo": "pandas-dev/pandas",
+      "registry_license": "BSD License",
+      "repo_license": {
+        "class": "permissive",
+        "label": "BSD-3-Clause"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "pillow",
+      "spec": "pillow==12.3.0",
+      "repo": "python-pillow/Pillow",
+      "registry_license": "MIT-CMU",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT-CMU"
+      },
+      "mismatch": null,
+      "flags": [
+        {
+          "id": "LICENSE_TEXT_MODIFIED",
+          "level": "note"
+        }
+      ],
+      "maintenance": [],
+      "status": "note"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "psutil",
+      "spec": "psutil==7.2.2",
+      "repo": "giampaolo/psutil",
+      "registry_license": "BSD-3-Clause",
+      "repo_license": {
+        "class": "permissive",
+        "label": "BSD-3-Clause"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [
+        "NO_RELEASES"
+      ],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "psycopg",
+      "spec": "psycopg[binary]==3.3.4",
+      "repo": "psycopg/psycopg",
+      "registry_license": "LGPL-3.0-only",
+      "repo_license": {
+        "class": "weak-copyleft",
+        "label": "LGPL-3.0"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [
+        "NO_RELEASES"
+      ],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "pyarrow",
+      "spec": "pyarrow==20.0.0",
+      "repo": "apache/arrow",
+      "registry_license": "Apache-2.0",
+      "repo_license": {
+        "class": "permissive",
+        "label": "Apache-2.0"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "pycrdt",
+      "spec": "pycrdt==0.14.8",
+      "repo": "y-crdt/pycrdt",
+      "registry_license": "MIT License",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "pydantic",
+      "spec": "pydantic==2.13.4",
+      "repo": "pydantic/pydantic",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "pydub",
+      "spec": "pydub==0.25.1",
+      "repo": null,
+      "registry_license": "MIT",
+      "status": "unresolved",
+      "reason": "no GitHub repo in registry metadata"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "PyJWT",
+      "spec": "PyJWT[crypto]==2.13.0",
+      "repo": "jpadilla/pyjwt",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "PyMySQL",
+      "spec": "PyMySQL==1.2.0",
+      "repo": "PyMySQL/PyMySQL",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "pyotp",
+      "spec": "pyotp==2.9.0",
+      "repo": "pyauth/pyotp",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [
+        {
+          "id": "LICENSE_TEXT_MODIFIED",
+          "level": "note"
+        }
+      ],
+      "maintenance": [],
+      "status": "note"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "pypandoc",
+      "spec": "pypandoc==1.17",
+      "repo": "JessicaTegner/pypandoc",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "pypdf",
+      "spec": "pypdf==6.7.5",
+      "repo": "py-pdf/pypdf",
+      "registry_license": "BSD-3-Clause",
+      "repo_license": {
+        "class": "permissive",
+        "label": "BSD"
+      },
+      "mismatch": null,
+      "flags": [
+        {
+          "id": "LICENSE_TEXT_MODIFIED",
+          "level": "note"
+        }
+      ],
+      "maintenance": [],
+      "status": "note"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "python-docx",
+      "spec": "python-docx==1.2.0",
+      "repo": "python-openxml/python-docx",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [
+        "NO_RELEASES"
+      ],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "python-mimeparse",
+      "spec": "python-mimeparse==2.0.0",
+      "repo": "falconry/python-mimeparse",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "python-multipart",
+      "spec": "python-multipart==0.0.32",
+      "repo": "Kludex/python-multipart",
+      "registry_license": "Apache-2.0",
+      "repo_license": {
+        "class": "permissive",
+        "label": "Apache-2.0"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "python-pptx",
+      "spec": "python-pptx==1.0.2",
+      "repo": "scanny/python-pptx",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [
+        "STALE",
+        "NO_RELEASES"
+      ],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "python-socketio",
+      "spec": "python-socketio==5.16.2",
+      "repo": null,
+      "registry_license": "MIT",
+      "status": "unresolved",
+      "reason": "no GitHub repo in registry metadata"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "pytz",
+      "spec": "pytz==2026.2",
+      "repo": "stub42/pytz",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "pyxlsb",
+      "spec": "pyxlsb==1.0.10",
+      "repo": "willtrnr/pyxlsb",
+      "registry_license": "LGPLv3+",
+      "repo_license": {
+        "class": "weak-copyleft",
+        "label": "LGPL-3.0"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [
+        "STALE"
+      ],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "qrcode",
+      "spec": "qrcode==8.2",
+      "repo": "lincolnloop/python-qrcode",
+      "registry_license": "BSD",
+      "repo_license": {
+        "class": "permissive",
+        "label": "BSD"
+      },
+      "mismatch": null,
+      "flags": [
+        {
+          "id": "LICENSE_TEXT_MODIFIED",
+          "level": "note"
+        }
+      ],
+      "maintenance": [
+        "QUIET",
+        "NO_RELEASES"
+      ],
+      "status": "note"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "rank-bm25",
+      "spec": "rank-bm25==0.2.2",
+      "repo": "dorianbrown/rank_bm25",
+      "registry_license": "Apache2.0",
+      "repo_license": {
+        "class": "permissive",
+        "label": "Apache-2.0"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "rapidocr",
+      "spec": "rapidocr==3.10.0",
+      "repo": "RapidAI/RapidOCR",
+      "registry_license": "Apache-2.0",
+      "repo_license": {
+        "class": "permissive",
+        "label": "Apache-2.0"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "redis",
+      "spec": "redis==8.0.1",
+      "repo": "redis/redis-py",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "regex",
+      "spec": "regex==2026.5.9",
+      "repo": "mrabarnett/mrab-regex",
+      "registry_license": "Apache-2.0 AND CNRI-Python",
+      "repo_license": {
+        "class": "permissive",
+        "label": "Apache-2.0"
+      },
+      "mismatch": null,
+      "flags": [
+        {
+          "id": "LICENSE_TEXT_MODIFIED",
+          "level": "note"
+        }
+      ],
+      "maintenance": [
+        "NO_RELEASES"
+      ],
+      "status": "note"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "requests",
+      "spec": "requests==2.34.2",
+      "repo": "psf/requests",
+      "registry_license": "Apache-2.0",
+      "repo_license": {
+        "class": "permissive",
+        "label": "Apache-2.0"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "sentence-transformers",
+      "spec": "sentence-transformers==5.5.1",
+      "repo": "huggingface/sentence-transformers",
+      "registry_license": "Apache-2.0",
+      "repo_license": {
+        "class": "permissive",
+        "label": "Apache-2.0"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "sentencepiece",
+      "spec": "sentencepiece==0.2.1",
+      "repo": "google/sentencepiece",
+      "registry_license": "Apache-2.0",
+      "repo_license": {
+        "class": "permissive",
+        "label": "Apache-2.0"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "soundfile",
+      "spec": "soundfile==0.13.1",
+      "repo": "bastibe/python-soundfile",
+      "registry_license": "BSD 3-Clause License",
+      "repo_license": {
+        "class": "permissive",
+        "label": "BSD-3-Clause"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "sqlalchemy",
+      "spec": "sqlalchemy[asyncio]==2.0.50",
+      "repo": "sqlalchemy/sqlalchemy",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "starlette-compress",
+      "spec": "starlette-compress==1.7.1",
+      "repo": "Zaczero/pkgs",
+      "registry_license": "0BSD",
+      "directory": "starlette-compress",
+      "repo_license": {
+        "class": "none",
+        "label": null
+      },
+      "mismatch": null,
+      "flags": [
+        {
+          "id": "LICENSE_ONLY_IN_REGISTRY",
+          "level": "note"
+        }
+      ],
+      "maintenance": [
+        "NO_RELEASES"
+      ],
+      "status": "note"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "starsessions",
+      "spec": "starsessions[redis]==2.2.1",
+      "repo": "alex-oleshkevich/starsessions",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [
+        "QUIET"
+      ],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "tiktoken",
+      "spec": "tiktoken==0.13.0",
+      "repo": "openai/tiktoken",
+      "registry_license": null,
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "transformers",
+      "spec": "transformers==5.5.4",
+      "repo": "huggingface/transformers",
+      "registry_license": "Apache 2.0 License",
+      "repo_license": {
+        "class": "permissive",
+        "label": "Apache-2.0"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "uvicorn",
+      "spec": "uvicorn[standard]==0.51.0",
+      "repo": "Kludex/uvicorn",
+      "registry_license": "BSD-3-Clause",
+      "repo_license": {
+        "class": "permissive",
+        "label": "BSD-3-Clause"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "validators",
+      "spec": "validators==0.35.0",
+      "repo": "python-validators/validators",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "xlrd",
+      "spec": "xlrd==2.0.2",
+      "repo": null,
+      "registry_license": "BSD",
+      "status": "unresolved",
+      "reason": "no GitHub repo in registry metadata"
+    },
+    {
+      "ecosystem": "pypi",
+      "type": "prod",
+      "name": "youtube-transcript-api",
+      "spec": "youtube-transcript-api==1.2.4",
+      "repo": "jdepoix/youtube-transcript-api",
+      "registry_license": "MIT",
+      "repo_license": {
+        "class": "permissive",
+        "label": "MIT"
+      },
+      "mismatch": null,
+      "flags": [],
+      "maintenance": [],
+      "status": "ok"
     }
-   ],
-   "status": "note"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "tiktoken",
-   "spec": "tiktoken==0.13.0",
-   "repo": "openai/tiktoken",
-   "registry_license": null,
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "transformers",
-   "spec": "transformers==5.5.4",
-   "repo": "huggingface/transformers",
-   "registry_license": "Apache 2.0 License",
-   "repo_license": {
-    "class": "permissive",
-    "label": "Apache-2.0"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "uvicorn",
-   "spec": "uvicorn[standard]==0.51.0",
-   "repo": "Kludex/uvicorn",
-   "registry_license": "BSD-3-Clause",
-   "repo_license": {
-    "class": "permissive",
-    "label": "BSD-3-Clause"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "validators",
-   "spec": "validators==0.35.0",
-   "repo": "python-validators/validators",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "xlrd",
-   "spec": "xlrd==2.0.2",
-   "repo": null,
-   "registry_license": "BSD",
-   "status": "unresolved",
-   "reason": "no GitHub repo in registry metadata"
-  },
-  {
-   "ecosystem": "pypi",
-   "type": "prod",
-   "name": "youtube-transcript-api",
-   "spec": "youtube-transcript-api==1.2.4",
-   "repo": "jdepoix/youtube-transcript-api",
-   "registry_license": "MIT",
-   "repo_license": {
-    "class": "permissive",
-    "label": "MIT"
-   },
-   "mismatch": null,
-   "flags": [],
-   "status": "ok"
-  }
- ],
- "manifest_commit": "f8ae8a6c328946dc62cd0712961a0632574581bf",
- "checked": "2026-10-13"
+  ]
 }
