@@ -1,6 +1,6 @@
 {
   "name": "ossay",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Assay an open-source repo before you adopt it: license reality, hosting rights, and activity signals in one card.",
   "type": "module",
   "bin": {
