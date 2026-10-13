@@ -1,4 +1,33 @@
 import { execFileSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { homedir } from 'node:os';
+import { join } from 'node:path';
+
+export const CACHE_TTL_MS = 24 * 3600 * 1000;
+let useCache = true;
+export const setCache = (on) => { useCache = on; };
+export const stats = { network: 0, notModified: 0, cached: 0 };
+
+export const cacheKey = (path) => createHash('sha1').update(path).digest('hex');
+export const isFresh = (entry, now = Date.now(), ttl = CACHE_TTL_MS) => !!entry && now - entry.at < ttl;
+const cacheDir = () => process.env.OSSAY_CACHE_DIR || join(homedir(), '.cache', 'ossay');
+const readCache = (path) => { try { return JSON.parse(readFileSync(join(cacheDir(), cacheKey(path)), 'utf8')); } catch { return null; } };
+const writeCache = (path, entry) => { try { mkdirSync(cacheDir(), { recursive: true }); writeFileSync(join(cacheDir(), cacheKey(path)), JSON.stringify(entry)); } catch { /* cache is optional */ } };
+
+// Message for a 403/429 that is a rate limit (primary: remaining 0; secondary: retry-after), else null.
+export function rateLimitMessage(status, headers, now = Date.now(), hasToken = false) {
+  const h = (k) => (typeof headers.get === 'function' ? headers.get(k) : headers[k]);
+  if (status !== 403 && status !== 429) return null;
+  const retry = Number(h('retry-after'));
+  const reset = Number(h('x-ratelimit-reset'));
+  let secs;
+  if (retry > 0) secs = retry;
+  else if (h('x-ratelimit-remaining') === '0' && reset > 0) secs = Math.max(reset - now / 1000, 0);
+  else return null;
+  const mins = Math.max(Math.ceil(secs / 60), 1);
+  return `GitHub API rate limit reached. Try again in about ${mins} min${hasToken ? '' : ', or set GITHUB_TOKEN (5000 requests/hour instead of 60)'}. Responses already fetched are cached, so re-running continues where this stopped.`;
+}
 
 let cachedToken;
 function token() {
@@ -13,17 +42,33 @@ function token() {
 }
 
 export async function api(path) {
+  const entry = useCache ? readCache(path) : null;
+  if (isFresh(entry)) { stats.cached++; return entry.status === 404 ? null : entry.body; }
   const headers = { accept: 'application/vnd.github+json', 'user-agent': 'ossay', 'x-github-api-version': '2022-11-28' };
   const t = token();
   if (t) headers.authorization = `Bearer ${t}`;
+  // A 304 answer to a conditional request does not count against the primary rate limit (GitHub REST docs).
+  if (entry && entry.etag) headers['if-none-match'] = entry.etag;
+  stats.network++;
   const res = await fetch('https://api.github.com' + path, { headers });
-  if (res.status === 404) return null;
+  if (res.status === 304 && entry) {
+    stats.notModified++;
+    if (useCache) writeCache(path, { ...entry, at: Date.now() });
+    return entry.body;
+  }
+  if (res.status === 404) {
+    if (useCache) writeCache(path, { at: Date.now(), status: 404 });
+    return null;
+  }
   if (!res.ok) {
-    const err = new Error(`GitHub API ${res.status} for ${path}${res.status === 403 ? ' (rate limit? set GITHUB_TOKEN)' : ''}`);
+    const limit = rateLimitMessage(res.status, res.headers, Date.now(), !!t);
+    const err = new Error(limit || `GitHub API ${res.status} for ${path}`);
     err.status = res.status;
     throw err;
   }
-  return res.json();
+  const body = await res.json();
+  if (useCache) writeCache(path, { at: Date.now(), etag: res.headers.get('etag'), body });
+  return body;
 }
 
 export function parseRepo(input) {

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { readFileSync, writeFileSync } from 'node:fs';
-import { parseRepo, fetchRepo, folderLicense, rootLicenseTexts } from '../src/github.mjs';
+import { parseRepo, fetchRepo, folderLicense, rootLicenseTexts, setCache, stats } from '../src/github.mjs';
 import { classify } from '../src/license.mjs';
 import { buildFlags } from '../src/flags.mjs';
 import { buildCard, renderText, renderMarkdown } from '../src/card.mjs';
@@ -16,6 +16,7 @@ Usage:
   ossay ledger <file> [--since YYYY-MM-DD] [--out changes.json]   (history for every repo in the file)
   ossay deps [path] [--json | --md] [--fail-on risk|maintenance] [--all]   (direct deps in package.json, requirements.txt, pyproject.toml, go.mod)
 
+Cache: GitHub responses are kept 24 h in ~/.cache/ossay (--no-cache to skip).
 Auth: uses GITHUB_TOKEN / GH_TOKEN, or \`gh auth token\` if available (60 req/h without).
 Heuristic output from public GitHub data. Not legal advice.`;
 
@@ -43,7 +44,10 @@ async function pool(list, n, fn) {
 function csvEscape(v) { const s = v == null ? '' : String(v); return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s; }
 
 async function main() {
-  const [cmd, arg, ...rest] = process.argv.slice(2);
+  const argv = process.argv.slice(2);
+  if (argv.includes('--no-cache')) setCache(false);
+  const [cmd, arg, ...rest] = argv.filter((a) => a !== '--no-cache');
+  if (process.env.OSSAY_DEBUG) process.on('exit', () => console.error(`[ossay] GitHub REST: ${stats.network} network (${stats.notModified} not modified), ${stats.cached} from cache`));
   const opt = (k) => { const i = rest.indexOf(k); return i >= 0 ? rest[i + 1] : null; };
   if (!cmd || cmd === '-h' || cmd === '--help') return console.log(HELP);
   if (cmd === 'check' && arg) {

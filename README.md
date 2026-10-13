@@ -103,6 +103,7 @@ License classes: `permissive`, `weak-copyleft`, `strong-copyleft`, `network-copy
 - Looks at the default branch's license file only (a dependency's pinned version may be older). `deps` covers direct dependencies only: transitive dependencies (lockfiles) and CLA terms are out of scope in v0. The registry license is the latest published version's. Per-folder licenses are detected only when one license file says so.
 - Pattern list covers the common source-available and model licenses; new licenses will show up as `custom`. Add a case and a test in [`test/`](test/license.test.mjs).
 - A snapshot of public data. Licenses change; re-run.
+- **GitHub API budget.** Measured with `OSSAY_DEBUG=1`: one repo costs 3 REST calls (repo, license, latest release; 5 when GitHub reports no license file), so without a token (60 requests/hour) about 20 repos per hour, and a 155-dependency `deps` run is roughly 450 calls. Responses are cached for 24 hours in `~/.cache/ossay` (`--no-cache` to skip): a repeat `check` or `deps` makes 0 requests (measured: 9 of 9 from cache on a 3-dependency project), and after 24 hours entries are revalidated with `ETag`, which GitHub documents as not counting against the primary rate limit when it answers 304 (measured: 9 of 9 answered 304). When the limit is hit, ossay prints how many minutes until it resets; calls already made stay cached, so re-running continues. Set `GITHUB_TOKEN` (or log in with `gh`) for 5,000 requests/hour.
 
 ## Roadmap
 
